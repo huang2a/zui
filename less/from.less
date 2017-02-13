@@ -1,0 +1,130 @@
+.zui-form{
+    .zui-form-item {
+        margin-bottom: 15px;
+        .clearfix();
+    }
+    .zui-form-label, .zui-form-mid, .zui-textarea {
+        line-height: 20px;
+        position: relative;
+    }
+    .zui-form-label {
+        float: left;
+        display: block;
+        padding: 10px 15px;
+        width: 110px;
+        font-weight: 400;
+        text-align: right;
+    }
+    .zui-input-block{
+        margin-left: 110px;
+        min-height: 38px;
+    }
+    .zui-inline{
+        position: relative;
+        display: inline-block;
+        float: left;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+    .zui-input-inline {
+        position: relative;
+    }
+    .zui-input-inline{
+        float: left;
+        width: 190px;
+        margin-right: 10px;
+    }
+     .zui-textarea {
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .zui-input, .zui-textarea {
+        display: block;
+        width: 100%;
+        padding-left: 10px;
+    }
+    .zui-input, .zui-select, .zui-textarea {
+        height: 40px;
+        line-height: 40px;
+        line-height: 38px\9;
+        border: 1px solid #e6e6e6;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+    .zui-textarea {
+        min-height: 100px;
+        height: auto;
+        padding: 6px 10px;
+        resize: vertical;
+        line-height: 24px;
+    }
+    .zui-select{
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        line-height: 38px\9;
+        border: 1px solid #e6e6e6;
+        background-color: #fff;
+        border-radius: 2px;
+    }
+    // 提示部分
+
+    .zui-word-aux {
+        font-size: 12px;
+        color: #999;
+    }
+    .zui-word-danger{
+        font-size: 12px;
+        color: #da0808;
+    }
+    .zui-form-mid {
+        float: left;
+        display: block;
+        padding: 10px 0;
+        margin-right: 10px;
+    }
+}
+
+
+.zui-radio {
+    display: inline-block;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 10px 0;
+    .clearfix();
+    input {
+        display: none;
+    }
+    input + span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background: #ccc;
+        cursor: pointer;
+        float: left;
+    }
+    input[type="radio"] + span {
+        border-radius: 50%;
+    }
+    input[type="checkbox"] + span {
+        border-radius: 10%;
+    }
+    input[type="checkbox"]:checked + span {
+        background: @default-main-color;
+        // 可定义图标作为背景，进而修改样式
+    }
+    input[type="radio"]:checked + span {
+        background: @default-main-color;
+        // 可定义图标作为背景，进而修改样式
+    }
+    em{
+        display: inline-block;
+        float: left;
+        height: 20px;
+        line-height: 20px;
+        padding-left: 5px;
+        font-style:normal;
+    }
+}

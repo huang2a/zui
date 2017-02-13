@@ -1,0 +1,26 @@
+// 全局变量
+@support-html5: true;
+@support-ie-version: 7;
+@support-old-ie: ~`@{support-ie-version} < 8`; // [deprecated] use `@support-ie-version` instead
+@use-autoprefixer: true;
+//   字体
+@default-font-size: 14px;
+@default-text-color: #333;   //网站默认字体颜色
+@default-text-assist-color: #999;   //网站辅助色字体颜色
+@default-input-placeholder-color: #999; //字体输入框默认颜色
+@default-base-font-family: 'Helvetica Neue', Arial, sans-serif;
+
+//   色彩系统
+@default-main-color: #fb5a02; //网站主色
+@default-assist-color: @default-main-color + #666; // 网站辅助色
+@default-succeed-color: #00BC4B; //成功色
+@default-danger-color: #F7B824;  //警告色
+@default-warning-color: #FF5722; //危险色
+
+// 页面布局
+@default-layout-container: 100%;
+@default-layout-main: 1180px;
+
+// default visual settings
+@default-border-radius: 5px;
+@default-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);

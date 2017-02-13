@@ -1,0 +1,360 @@
+
+@import "variables.less";
+// 1. 设置默认字体样式为无衬线字体
+// 2. 防止IOS设备和IE下字体大小因为屏幕的转向而改变。
+// 附：iOS设备旋转后可能会自动调整字体大小（e.g. 竖着的时候是14px，横着就自动调整成20px）。
+// 并没有禁用用户放大。
+
+
+html {
+  font-size: @default-font-size;
+  font-family: @default-base-font-family;
+  color:@default-text-color;
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+// 移除默认的margin.
+
+
+body {
+  margin: 0;
+}
+
+//  HTML5 display definitions
+//  ==========================================================
+//  纠正了HTML5元素的块状属性在IE8/9中无法识别。
+//  IE10/11及Firefox中details` or `summary无法块状显示
+//  在IE11中main不是块状级别。
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+//  1.补充了HTML5新元素inline-block在IE8/9下的正确显示。
+//  2.补充了部分HTML5新元素在浏览器下的垂直对齐方式为基线对齐（vertical-align: baseline）
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+//  如果audio标签没有控制栏，则应该隐藏
+
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+
+//  新的template标签用于HTML模板，兼容旧浏览器，隐藏模板。
+
+
+[hidden],
+template {
+  display: none;
+}
+
+//  Links  超链接元素
+//  ==================================================================
+//  移除在IE10下点击超链接出现的背景。
+
+a {
+  background-color: transparent;
+}
+
+
+//  改善可读性集中元素时也在
+//  主动/悬停状态。
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+
+//  语义化文本标签
+
+//  1. 正确的样式在Firefox39 和 Opera 12。
+//  2. 正确的失踪的样式在Chrome,边缘,即Opera和Safari。
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+
+// 统一了b,strong样式格式：
+// 1.abbr元素在firefox外其他的浏览器下没有下划线的问题
+// 2.统一了Safari and Chrome 给b 和strong设置的属性是bolder
+
+
+b,
+strong {
+  font-weight: inherit; /* 1 */
+}
+
+b,
+strong {
+  font-weight: bolder; /* 2 */
+}
+
+ // dfn用于对特殊术语和专业短语的定义，在safari和chrome中不是斜体
+
+
+
+dfn {
+  font-style: italic;
+}
+
+// 在section和article中h1标签的字体大小、margin样式不统一
+
+
+
+//  mark标签用来突出显示标记的文本，背后有一个高亮的背景色，低版本中并不识别。
+
+
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+//  统一了small标签在所有浏览器中的样式
+
+
+small {
+  font-size: 80%;
+}
+
+// sub和sup表示上标和下表，统一两者的样式。
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+//  移除了在IE 8/9/10下a标签img的边框(旧版本的IE浏览器下有蓝色边框)
+
+img {
+  border: 0;
+}
+
+//   图片多余部分在IE 9/10/11下不隐藏的问题
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+//  Grouping content群组元素
+//  ==================================================================
+
+//  修复margin不起作用问题
+
+
+figure {
+  margin: 1em 40px;
+}
+
+
+//   统一了hr样式.
+//   1. 在Firefox下设置了box-sizing`为border-box
+//   2. 修正在IE 8/9/10/11 and Edge 12下overflow值为visible
+
+
+hr {
+    height: 1px;
+    margin: 5px 0;
+    border: 0;
+    background-color: #e2e2e2;
+    clear: both;
+}
+ // 原先标签多出的直接溢出，这里标签溢出增加滚动条.
+
+
+pre {
+  overflow: auto;
+}
+ // 统一了在各个浏览器中字体样式
+
+
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace; /* 1 */
+}
+
+// Forms表单
+//   =====================================================================
+
+// 纠正了表单标签字体不继承的问题。
+// 在各个浏览器中外边距不统一
+
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font: inherit; /* 1 */
+  margin: 0; /* 2 */
+  outline:none;
+}
+// 将button便签在IE 8/9/10/11溢出属性改为visible
+
+
+button {
+  overflow: visible;
+}
+
+ // 纠正了button、select标签text-transform属性继承的问题。
+
+
+button,
+select {
+  text-transform: none;
+}
+
+  // 1. 避免Android 4.0.*中的WebKit bug破坏原生的audio和video控制器.
+  // 2. 无法设置可点击的input标签问题
+  // 3. 统一其他类型的input光标样式
+
+
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+
+//  统一按钮禁用时的鼠标光标样式
+
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+// 移除Firefox 4+下的边框和内边距.
+
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+button:-moz-focusring,
+input:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+// 修复了Firefox 4+中设置`line-height`为normal!important样式。
+
+input {
+  line-height: normal;
+}
+
+// 1. 修正checkbox、radio在IE 8/9/10下box sizing设置为content-box的问题
+// 2. 移除checkbox、radio在IE 8/9/10中多余的内边距
+
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+//  修正input[type="number"]光标改变效果
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+
+ // 修正在chrome下input[type="search"]appearance值设置为searchfield
+
+input[type="search"] {
+  -webkit-appearance: textfield;
+}
+
+ //  统一输入框的样式，移除了默认的一些样式。
+
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+  // 统一了fieldset的border、外边距和内边距
+
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+  // 1. 在 IE 8/9/10/11下颜色不继承问题
+  // 2. 重置了内边距
+
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+//  移除了textarea在IE 8/9/10/11下的滚动条
+
+
+textarea {
+  overflow: auto;
+}
+
+// 统一了optgroup标签的font-weight属性为bold
+
+
+optgroup {
+  font-weight: bold;
+}

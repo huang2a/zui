@@ -1,0 +1,180 @@
+// 浮动模块
+.clearfix {
+    &:before,
+    &:after {
+        display: table;
+        content: "";
+    }
+    &:after {
+        clear: both;
+    }
+}
+.clearfix{
+    *zoom: 1;
+}
+// Opacity
+// In IE9, when `opacity` is set, alpha filter will be ignored
+.opacity(@opacity: 100%) {
+    opacity: unit(@opacity) / 100;
+}
+.opacity(@opacity: 100%) when (@support-ie-version < 9) {
+    @op: unit(@opacity);
+    filter: ~"alpha(opacity=@{op})";
+}
+
+// Single background with RGBA color
+.rgba-background(@rgba) when (@support-ie-version < 9) {
+    // prevent click through in IE 8 using a transparent background image
+    background: ~"url(data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7) repeat\0";
+    @argb: argb(@rgba);
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startColorstr=@{argb},endColorstr=@{argb})\0";
+    zoom: ~"1\0";
+    background: @rgba;
+    // hack for IE9 to prevent applying rgba and filter at the same time
+    :root & {
+        filter: none\9;
+    }
+}
+.rgba-background(@rgba) when not (@support-ie-version < 9) {
+    background: @rgba;
+}
+.rgba-background(@color, @opacity) {
+    @op: unit(@opacity);
+    @rgba: fadeout(@color, percentage((100 - @op) / 100));
+    .rgba-background(@rgba);
+}
+
+// Border Radius
+
+// all
+.border-radius(@radius: @default-border-radius) when not (@use-autoprefixer) {
+    -webkit-border-radius: @radius;
+       -moz-border-radius: @radius;
+            border-radius: @radius;
+}
+.border-radius(@radius: @default-border-radius) when (@use-autoprefixer) {
+    border-radius: @radius;
+}
+.border-radius(@radius-x, @radius-y) {
+    .border-radius(@radius-x ~"/" @radius-y);
+}
+
+// top left
+.border-top-left-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-top-left-radius: @radius;
+        -moz-border-radius-topleft: @radius;
+            border-top-left-radius: @radius;
+}
+.border-top-left-radius(@radius) when (@use-autoprefixer) {
+    border-top-left-radius: @radius;
+}
+.border-top-left-radius(@radius-x, @radius-y) {
+    .border-top-left-radius(@radius-x ~"/" @radius-y);
+}
+
+// top right
+.border-top-right-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-top-right-radius: @radius;
+        -moz-border-radius-topright: @radius;
+            border-top-right-radius: @radius;
+}
+.border-top-right-radius(@radius) when (@use-autoprefixer) {
+    border-top-right-radius: @radius;
+}
+.border-top-right-radius(@radius-x, @radius-y) {
+    .border-top-right-radius(@radius-x ~"/" @radius-y)
+}
+
+// bottom right
+.border-bottom-right-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-bottom-right-radius: @radius;
+        -moz-border-radius-bottomright: @radius;
+            border-bottom-right-radius: @radius;
+}
+.border-bottom-right-radius(@radius) when (@use-autoprefixer) {
+    border-bottom-right-radius: @radius;
+}
+.border-bottom-right-radius(@radius-x, @radius-y) {
+    .border-bottom-right-radius(@radius-x ~"/" @radius-y)
+}
+
+// bottom left
+.border-bottom-left-radius(@radius) when not (@use-autoprefixer) {
+    -webkit-border-bottom-left-radius: @radius;
+        -moz-border-radius-bottomleft: @radius;
+            border-bottom-left-radius: @radius;
+}
+.border-bottom-left-radius(@radius) when (@use-autoprefixer) {
+    border-bottom-left-radius: @radius;
+}
+.border-bottom-left-radius(@radius-x, @radius-y) {
+    .border-bottom-left-radius(@radius-x ~"/" @radius-y);
+}
+
+// top
+.border-top-radius(@radius) {
+    .border-top-left-radius(@radius);
+    .border-top-right-radius(@radius);
+}
+.border-top-radius(@radius-x, @radius-y) {
+    .border-top-radius(@radius-x ~"/" @radius-y);
+}
+
+// right
+.border-right-radius(@radius) {
+    .border-top-right-radius(@radius);
+    .border-bottom-right-radius(@radius);
+}
+.border-right-radius(@radius-x, @radius-y) {
+    .border-right-radius(@radius-x ~"/" @radius-y);
+}
+
+// bottom
+.border-bottom-radius(@radius) {
+    .border-bottom-right-radius(@radius);
+    .border-bottom-left-radius(@radius);
+}
+.border-bottom-radius(@radius-x, @radius-y) {
+    .border-bottom-radius(@radius-x ~"/" @radius-y);
+}
+
+// left
+.border-left-radius(@radius) {
+    .border-top-left-radius(@radius);
+    .border-bottom-left-radius(@radius);
+}
+.border-left-radius(@radius-x, @radius-y) {
+    .border-left-radius(@radius-x ~"/" @radius-y);
+}
+
+//
+// Drop shadows
+.box-shadow(@shadow: @default-box-shadow, ...) when not (@use-autoprefixer) {
+    @shadows: ~`(function() { var args = "@{arguments}".replace(/[[\]]/g, ""); if(!args.match(/[^,]\s+[^,]/)) { args = args.replace(/,(?=[^()]*\))/g, "%est%").replace(/,/g, "").replace(/%est%/g, ","); } return args;})()`;
+    -webkit-box-shadow: @shadows;
+       -moz-box-shadow: @shadows;
+            box-shadow: @shadows;
+}
+.box-shadow(@shadow: @default-box-shadow, ...) when (@use-autoprefixer) {
+    @shadows: ~`(function() { var args = "@{arguments}".replace(/[[\]]/g, ""); if(!args.match(/[^,]\s+[^,]/)) { args = args.replace(/,(?=[^()]*\))/g, "%est%").replace(/,/g, "").replace(/%est%/g, ","); } return args;})()`;
+    box-shadow: @shadows;
+}
+.zui-pull-left{
+    float: left !important;
+}
+.zui-pull-right{
+    float: right !important;
+}
+// 显示或隐藏内容
+.zui-show {
+  display: block !important;
+}
+.zui-hidden {
+  display: none !important;
+}
+.zui-invisible {
+  visibility: hidden;
+}
+.zui-text-hide{
+    text-indent: -9999px;
+}

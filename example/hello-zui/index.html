@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>ZUI方案演示</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../../dist/css/zui.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/dome.css">
+</head>
+<body style="background-color: #f0efef;">
+    <div class="zui-container">
+        <div class="zui-main" style="background-color: #fff;">
+            <div class="zui-fluid">
+            <div class="zui-row">
+                <div class="zui-col-9">
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="font">
+                            <h2>字体说明</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>字体使用说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example">
+                            <h3 class="title">字体大小使用</h3>
+                            <p class="zui-font36">36px</p>
+                            <p class="zui-font24">24px</p>
+                            <p class="zui-font18">18px</p>
+                            <p class="zui-font16">16px</p>
+                            <p class="zui-font14">14px</p>
+                            <p class="zui-font12">12px</p>
+                            <h3 class="title">字体颜色使用</h3>
+                            <p class="zui-color-main">主体颜色</p>
+                            <p class="zui-color-main-assist">主体色的辅助色彩</p>
+                            <p class="zui-color-default">字体默认颜色</p>
+                            <p class="zui-color-default-assist">
+                            字体默认颜色的辅助色</p>
+                            <h3 class="title">字体对齐使用</h3>
+                            <p class="zui-text-left">字体的左对齐</p>
+                            <p class="zui-text-center">字体居中对齐</p>
+                            <p class="zui-text-right">字体的右对齐</p>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="assist">
+                            <h2>辅助元素</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>辅助元素使用说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example">
+                            <div class="clearfix">
+                                <p class="zui-pull-left zui-font36">左浮动</p>
+                                <p class="zui-pull-right zui-font36">有浮动</p>
+                            </div>
+                            <p class="zui-border-bottom zui-padding-bottom10">这是一条底部实线</p>
+                            <p class="zui-dashed zui-padding-bottom10" >这是一条底部虚线</p>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="grid">
+                            <h2>栅格系统</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>栅格系统用法说明</h4>
+                            <p>使用单一的一组 .zui-col-* 栅格类，就可以创建一个基本的栅格系统，在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在桌面（中等）屏幕设备上变为水平排列。所有“列（column）必须放在 ” .zui-fluid 和 .zui-row 内。</p>
+                        </div>
+                        <div class="bs-example">
+                            <div class="zui-fluid">
+                                <div class="zui-row">
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                  <div class="zui-col-1">.zui-col-1</div>
+                                </div>
+                                <div class="zui-row">
+                                  <div class="zui-col-8">.zui-col-8</div>
+                                  <div class="zui-col-4">.zui-col-4</div>
+                                </div>
+                                <div class="zui-row">
+                                  <div class="zui-col-4">.zui-col-4</div>
+                                  <div class="zui-col-4">.zui-col-4</div>
+                                  <div class="zui-col-4">.zui-col-4</div>
+                                </div>
+                                <div class="zui-row">
+                                  <div class="zui-col-6">.zui-col-6</div>
+                                  <div class="zui-col-6">.zui-col-6</div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-fluid&quot;&gt;<br>
+                                    <span class="n"></span>&lt;div class=&quot;zui-row&quot;&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-1&quot;&gt;.zui-col-1&lt;/div&gt;<br>
+                                    <span class="n"></span>&lt;/div&gt;<br>
+                                    <span class="n"></span>&lt;div class=&quot;zui-row&quot;&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-8&quot;&gt;.zui-col-8&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-4&quot;&gt;.zui-col-4&lt;/div&gt;<br>
+                                    <span class="n"></span>&lt;/div&gt;<br>
+                                    <span class="n"></span>&lt;div class=&quot;zui-row&quot;&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-4&quot;&gt;.zui-col-4&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-4&quot;&gt;.zui-col-4&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-4&quot;&gt;.zui-col-4&lt;/div&gt;<br>
+                                    <span class="n"></span>&lt;/div&gt;<br>
+                                    <span class="n"></span>&lt;div class=&quot;zui-row&quot;&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-6&quot;&gt;.zui-col-6&lt;/div&gt;<br>
+                                    <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-col-6&quot;&gt;.zui-col-6&lt;/div&gt;<br>
+                                   <span class="n"></span>&lt;/div&gt;<br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-example">
+                            <p>如果在一个 .row 内包含的列（column）大于12个，包含多余列（column）的元素将作为一个整体单元被另起一行排列。</p>
+                            <div class="zui-fluid">
+                                <div class="zui-row">
+                                    <div class="zui-col-9">.zui-col-9</div>
+                                    <div class="zui-col-4">.zui-col-4</div>
+                                    <div class="zui-col-6">.zui-col-6</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bs-example">
+                            <p>使用 .zui-col-offset-* 类可以将列向右侧偏移。这些类实际是通过使用 * 选择器为当前元素增加了左侧的边距（margin）。例如，.zui-col-offset-4 类将 .zui-col-4 元素向右侧偏移了4个列（column）的宽度。</p>
+                            <div class="zui-fluid">
+                                <div class="zui-row">
+                                  <div class="zui-col-4">.zui-col-4</div>
+                                  <div class="zui-col-4 zui-col-offset-4">.zui-col-4 .zui-col-offset-4</div>
+                                </div>
+                                <div class="zui-row">
+                                  <div class="zui-col-3 zui-col-offset-3">.zui-col-3 .zui-col-offset-3</div>
+                                  <div class="zui-col-3 zui-col-offset-3">.zui-col-3 .zui-col-offset-3</div>
+                                </div>
+                                <div class="zui-row">
+                                  <div class="zui-col-6 zui-col-offset-3">.zui-col-6 .zui-col-offset-3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title"  id="bottom">
+                            <h2>按钮样式</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>内置8种按钮的样式</h4>
+                            <p>为 &lt;a&gt;、&lt;button&gt; 或 &lt;input&gt; 元素添加按钮类（button class）即可实现元素按钮显示</p>
+                        </div>
+                        <div class="bs-example">
+                            <button class="zui-btn zui-btn-primary">原始按钮</button>
+                            <button class="zui-btn">主体按钮</button>
+                            <button class="zui-btn zui-btn-assist">辅助按钮</button>
+                            <button class="zui-btn zui-btn-success">成功按钮</button>
+                            <button class="zui-btn zui-btn-warning">警告按钮</button>
+                            <button class="zui-btn zui-btn-danger">危险按钮</button>
+                            <button class="zui-btn zui-btn-disabled">禁止按钮</button>
+                            <button class="zui-btn zui-btn-link">链接按钮</button>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;button class=&quot;zui-btn zui-btn-primary&quot;&gt;原始按钮&lt;/button&gt; <br>
+                                    &lt;button class=&quot;zui-btn&quot;&gt;主体按钮&lt;/button&gt; <br>
+                                    &lt;button class=&quot;zui-btn zui-btn-assist&quot;&gt;辅助按钮&lt;/button&gt; <br>
+                                    &lt;button class=&quot;zui-btn zui-btn-success&quot;&gt;成功按钮&lt;/button&gt; <br>
+                                    &lt;button class=&quot;zui-btn zui-btn-warning&quot;&gt;警告按钮&lt;/button&gt; <br>
+                                    &lt;button class=&quot;zui-btn zui-btn-danger&quot;&gt;危险按钮&lt;/button&gt; <br>
+                                    &lt;button class=&quot;zui-btn zui-btn-disabled&quot;&gt;禁止按钮&lt;/button&gt; <br>
+                                    &lt;button class=&quot;zui-btn zui-btn-link&quot;&gt;链接按钮&lt;/button&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>按钮尺寸大小</h4>
+                            <p>为按钮追加class类 .zui-btn-big .zui-btn-small .zui-btn-mini .zui-btn-block为不同的按钮设置不同的大小样式</p>
+                        </div>
+                        <div class="bs-example">
+                            <button class="zui-btn  zui-btn-big">这是个大按钮</button>
+                            <button class="zui-btn ">这是个正常按钮</button>
+                            <button class="zui-btn zui-btn-small">这是个小按钮</button>
+                            <button class="zui-btn zui-btn-mini">这是个迷你按钮</button>
+                            <p>这是分割线</p>
+                            <button class="zui-btn zui-btn-block">这是个块状按钮</button>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;button class=&quot;zui-btn  zui-btn-big&quot;&gt;这是个大按钮&lt;/button&gt;<br>
+                                    &lt;button class=&quot;zui-btn &quot;&gt;这是个正常按钮&lt;/button&gt;<br>
+                                    &lt;button class=&quot;zui-btn zui-btn-small&quot;&gt;这是个小按钮&lt;/button&gt;<br>
+                                    &lt;button class=&quot;zui-btn zui-btn-mini&quot;&gt;这是个迷你按钮&lt;/button&gt;<br>
+                                    &lt;p&gt;这是分割线&lt;/p&gt;<br>
+                                    &lt;button class=&quot;zui-btn zui-btn-block&quot;&gt;这是个块状按钮&lt;/button&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title"  id="form">
+                            <h2>表单样式</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>表单用法说明</h4>
+                            <p>。</p>
+                        </div>
+                        <div class="bs-example">
+                            <div class="zui-form">
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">单行输入框</label>
+                                    <div class="zui-input-block">
+                                      <input type="text" name="title"  autocomplete="off" placeholder="请输入标题" class="zui-input">
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">验证手机</label>
+                                    <div class="zui-input-inline">
+                                      <input type="tel" name="phone" verify="phone" autocomplete="off" class="zui-input">
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <div class="zui-inline">
+                                        <label class="zui-form-label">横向排列</label>
+                                        <div class="zui-input-inline">
+                                            <input type="number" name="number" autocomplete="off" placeholder="输入数量" class="zui-input">
+                                        </div>
+                                    </div>
+                                    <div class="zui-inline">
+                                        <label class="zui-form-label">横向排列</label>
+                                        <div class="zui-input-inline">
+                                            <input type="text" name="date" id="date" placeholder="输入时间" autocomplete="off" class="zui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">输入提示</label>
+                                    <div class="zui-input-inline">
+                                      <input type="password" name="password" verify="pass" placeholder="请输入密码" autocomplete="off" class="zui-input">
+                                    </div>
+                                    <div class="zui-form-mid zui-word-aux">请填写6到12位密码</div>
+                                    <div class="zui-form-mid zui-word-danger">错误时候的提示！</div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <div class="zui-inline">
+                                        <label class="zui-form-label">范围</label>
+                                        <div class="zui-input-inline" style="width: 100px;">
+                                            <input type="text" name="price-min" placeholder="￥" autocomplete="off" class="zui-input">
+                                        </div>
+                                        <div class="zui-form-mid">-</div>
+                                        <div class="zui-input-inline" style="width: 100px;">
+                                            <input type="text" name="price-max" placeholder="￥" autocomplete="off" class="zui-input">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">下拉选择</label>
+                                    <div class="zui-input-block">
+                                      <select class="zui-select" name="interest">
+                                        <option value="0">写作</option>
+                                        <option value="1" selected="">阅读</option>
+                                        <option value="2">游戏</option>
+                                        <option value="3">音乐</option>
+                                        <option value="4">旅行</option>
+                                      </select>
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">单选框</label>
+                                    <div class="zui-input-block">
+                                        <label class="zui-radio"><input name="radio" type="radio"><span></span><em>男</em></label>
+                                        <label class="zui-radio"><input name="radio" type="radio"><span></span><em>女</em></label>
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">复选框</label>
+                                    <div class="zui-input-block">
+                                        <label class="zui-radio"><input name="check" type="checkbox"><span></span><em>足球</em></label>
+                                        <label class="zui-radio"><input name="check" type="checkbox"><span></span><em>篮球</em></label>
+                                        <label class="zui-radio"><input name="check" type="checkbox"><span></span><em>羽毛球</em></label>
+                                        <label class="zui-radio"><input name="check" type="checkbox"><span></span><em>乒乓球</em></label>
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">文本域</label>
+                                    <div class="zui-input-block">
+                                      <textarea placeholder="请输入内容" class="zui-textarea"></textarea>
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <div class="zui-input-block">
+                                        <button class="zui-btn">立即提交</button>
+                                        <button class="zui-btn zui-btn-primary">重置</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    <br>&lt;div class=&quot;zui-form&quot;&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                    <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;单行输入框&lt;/label&gt;
+                                    <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-block&quot;&gt;
+                                      <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;input type=&quot;text&quot; name=&quot;title&quot;  autocomplete=&quot;off&quot; placeholder=&quot;请输入标题&quot; class=&quot;zui-input&quot;&gt;
+                                    <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;验证手机&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-inline&quot;&gt;
+                                          <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;input type=&quot;tel&quot; name=&quot;phone&quot; verify=&quot;phone&quot; autocomplete=&quot;off&quot; class=&quot;zui-input&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-inline&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;横向排列&lt;/label&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-inline&quot;&gt;
+                                                <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;input type=&quot;number&quot; name=&quot;number&quot; autocomplete=&quot;off&quot; placeholder=&quot;输入数量&quot; class=&quot;zui-input&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-inline&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;横向排列&lt;/label&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-inline&quot;&gt;
+                                                <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;input type=&quot;text&quot; name=&quot;date&quot; id=&quot;date&quot; placeholder=&quot;输入时间&quot; autocomplete=&quot;off&quot; class=&quot;zui-input&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;输入提示&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-inline&quot;&gt;
+                                         <br> <span class="n"></span><span class="n"></span><span class="n"></span>&lt;input type=&quot;password&quot; name=&quot;password&quot; verify=&quot;pass&quot; placeholder=&quot;请输入密码&quot; autocomplete=&quot;off&quot; <br><span class="n"></span><span class="n"></span><span class="n"></span>class=&quot;zui-input&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-form-mid zui-word-aux&quot;&gt;请填写6到12位密码&lt;/div&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-form-mid zui-word-danger&quot;&gt;错误时候的提示！&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-inline&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;范围&lt;/label&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-inline&quot; style=&quot;width: 100px;&quot;&gt;
+                                                <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;input type=&quot;text&quot; name=&quot;price-min&quot; placeholder=&quot;￥&quot; autocomplete=&quot;off&quot; class=&quot;zui-input&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-form-mid&quot;&gt;-&lt;/div&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-inline&quot; style=&quot;width: 100px;&quot;&gt;
+                                                <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;input type=&quot;text&quot; name=&quot;price-max&quot; placeholder=&quot;￥&quot; autocomplete=&quot;off&quot; class=&quot;zui-input&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;下拉选择&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-block&quot;&gt;
+                                         <br><span class="n"></span><span class="n"></span><span class="n"></span> &lt;select class=&quot;zui-select&quot; name=&quot;interest&quot;&gt;
+                                           <br> <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;option value=&quot;0&quot;&gt;写作&lt;/option&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;option value=&quot;1&quot; selected=&quot;&quot;&gt;阅读&lt;/option&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;option value=&quot;2&quot;&gt;游戏&lt;/option&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;option value=&quot;3&quot;&gt;音乐&lt;/option&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;option value=&quot;4&quot;&gt;旅行&lt;/option&gt;
+                                          <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/select&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;单选框&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-block&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-radio&quot;&gt;&lt;input name=&quot;radio&quot; type=&quot;radio&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;男&lt;/em&gt;&lt;/label&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-radio&quot;&gt;&lt;input name=&quot;radio&quot; type=&quot;radio&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;女&lt;/em&gt;&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;复选框&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-block&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-radio&quot;&gt;&lt;input name=&quot;check&quot; type=&quot;checkbox&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;足球&lt;/em&gt;&lt;/label&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-radio&quot;&gt;&lt;input name=&quot;check&quot; type=&quot;checkbox&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;篮球&lt;/em&gt;&lt;/label&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-radio&quot;&gt;&lt;input name=&quot;check&quot; type=&quot;checkbox&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;羽毛球&lt;/em&gt;&lt;/label&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-radio&quot;&gt;&lt;input name=&quot;check&quot; type=&quot;checkbox&quot;&gt;&lt;span&gt;&lt;/span&gt;&lt;em&gt;乒乓球&lt;/em&gt;&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;文本域&lt;/label&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-block&quot;&gt;
+                                          <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;textarea placeholder=&quot;请输入内容&quot; class=&quot;zui-textarea&quot;&gt;&lt;/textarea&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-block&quot;&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;button class=&quot;zui-btn&quot;&gt;立即提交&lt;/button&gt;
+                                            <br><span class="n"></span><span class="n"></span><span class="n"></span>&lt;button class=&quot;zui-btn zui-btn-primary&quot;&gt;重置&lt;/button&gt;
+                                        <br><span class="n"></span><span class="n"></span>&lt;/div&gt;
+                                    <br><span class="n"></span>&lt;/div&gt;
+                                    <br>&lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title"  id="table">
+                            <h2>表格样式</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>表格用法说明</h4>
+                            <p>。</p>
+                        </div>
+                        <div class="bs-example">
+                            <h3 class="title">默认表格</h3>
+                            <table class="zui-table">
+                              <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                                <col>
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>订单号</th>
+                                  <th>收件人</th>
+                                  <th>下单时间</th>
+                                  <th>订单留言</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>张三</td>
+                                  <td>2017-2-11 14:37:51</td>
+                                  <td>麻烦发顺丰快递，谢谢</td>
+                                </tr>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>李四</td>
+                                  <td>2017-2-11 14:38:40</td>
+                                  <td>请在工作日进行配送，政府部门周末才收件的。</td>
+                                </tr>
+                                <tr>
+                                  <td>HW32132145</td>
+                                  <td>Helen</td>
+                                  <td>2017-2-11 14:39:59</td>
+                                  <td> Life is either a daring adventure or nothing.</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>王五</td>
+                                  <td>2017-2-11 14:41:08</td>
+                                  <td>请保密发送</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>赵六</td>
+                                  <td>2017-2-11 14:41:44</td>
+                                  <td>东西还不错，第二次买，记得保密发送。</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="title">行边框表格</h3>
+                            <table class="zui-table" zui-skin="line">
+                              <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                                <col>
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>订单号</th>
+                                  <th>收件人</th>
+                                  <th>下单时间</th>
+                                  <th>订单留言</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>张三</td>
+                                  <td>2017-2-11 14:37:51</td>
+                                  <td>麻烦发顺丰快递，谢谢</td>
+                                </tr>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>李四</td>
+                                  <td>2017-2-11 14:38:40</td>
+                                  <td>请在工作日进行配送，政府部门周末才收件的。</td>
+                                </tr>
+                                <tr>
+                                  <td>HW32132145</td>
+                                  <td>Helen</td>
+                                  <td>2017-2-11 14:39:59</td>
+                                  <td> Life is either a daring adventure or nothing.</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>王五</td>
+                                  <td>2017-2-11 14:41:08</td>
+                                  <td>请保密发送</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>赵六</td>
+                                  <td>2017-2-11 14:41:44</td>
+                                  <td>东西还不错，第二次买，记得保密发送。</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="title">列边框表格</h3>
+                            <table class="zui-table" zui-even="" zui-skin="row">
+                              <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                                <col>
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>订单号</th>
+                                  <th>收件人</th>
+                                  <th>下单时间</th>
+                                  <th>订单留言</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>张三</td>
+                                  <td>2017-2-11 14:37:51</td>
+                                  <td>麻烦发顺丰快递，谢谢</td>
+                                </tr>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>李四</td>
+                                  <td>2017-2-11 14:38:40</td>
+                                  <td>请在工作日进行配送，政府部门周末才收件的。</td>
+                                </tr>
+                                <tr>
+                                  <td>HW32132145</td>
+                                  <td>Helen</td>
+                                  <td>2017-2-11 14:39:59</td>
+                                  <td> Life is either a daring adventure or nothing.</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>王五</td>
+                                  <td>2017-2-11 14:41:08</td>
+                                  <td>请保密发送</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>赵六</td>
+                                  <td>2017-2-11 14:41:44</td>
+                                  <td>东西还不错，第二次买，记得保密发送。</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                            <h3 class="title">无边框表格</h3>
+                            <table class="zui-table" zui-even="" zui-skin="noborder">
+                              <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                                <col>
+                              </colgroup>
+                              <thead>
+                                <tr>
+                                  <th>订单号</th>
+                                  <th>收件人</th>
+                                  <th>下单时间</th>
+                                  <th>订单留言</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>张三</td>
+                                  <td>2017-2-11 14:37:51</td>
+                                  <td>麻烦发顺丰快递，谢谢</td>
+                                </tr>
+                                <tr>
+                                  <td>HS273187131</td>
+                                  <td>李四</td>
+                                  <td>2017-2-11 14:38:40</td>
+                                  <td>请在工作日进行配送，政府部门周末才收件的。</td>
+                                </tr>
+                                <tr>
+                                  <td>HW32132145</td>
+                                  <td>Helen</td>
+                                  <td>2017-2-11 14:39:59</td>
+                                  <td> Life is either a daring adventure or nothing.</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>王五</td>
+                                  <td>2017-2-11 14:41:08</td>
+                                  <td>请保密发送</td>
+                                </tr>
+                                <tr>
+                                  <td>HS29321891</td>
+                                  <td>赵六</td>
+                                  <td>2017-2-11 14:41:44</td>
+                                  <td>东西还不错，第二次买，记得保密发送。</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code>
+                                    <span class="n"></span>&lt;h3 class=&quot;title&quot;&gt;默认表格&lt;/h3&gt;<br>
+                                    <span class="n"></span>&lt;table class=&quot;zui-table&quot;&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;colgroup&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;col width=&quot;200&quot;&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;col width=&quot;200&quot;&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;col width=&quot;200&quot;&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;col&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/colgroup&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;thead&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;tr&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span>&lt;th&gt;订单号&lt;/th&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;th&gt;收件人&lt;/th&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span>&lt;th&gt;下单时间&lt;/th&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;th&gt;订单留言&lt;/th&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/tr&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/thead&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;tbody&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;tr&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;HS273187131&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;张三&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;2017-2-11 14:37:51&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;麻烦发顺丰快递，谢谢&lt;/td&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/tr&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;tr&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;HS273187131&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;李四&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;2017-2-11 14:38:40&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;请在工作日进行配送，政府部门周末才收件的。&lt;/td&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/tr&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;tr&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;HW32132145&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;Helen&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;2017-2-11 14:39:59&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt; Life is either a daring adventure or nothing.&lt;/td&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/tr&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;tr&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;HS29321891&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;王五&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;2017-2-11 14:41:08&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;请保密发送&lt;/td&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/tr&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;tr&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;HS29321891&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;赵六&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;2017-2-11 14:41:44&lt;/td&gt;<br>
+                                          <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;td&gt;东西还不错，第二次买，记得保密发送。&lt;/td&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/tr&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/tbody&gt;<br>
+                                    <span class="n"></span>&lt;/table&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                             <pre>
+                                <code>
+                                    <span class="n"></span>&lt;h3 class=&quot;title&quot;&gt;行边框表格&lt;/h3&gt;<br>
+                                    <span class="n"></span>&lt;table class=&quot;zui-table&quot; zui-skin=&quot;line&quot;&gt; <br>
+                                      <span class="n"></span><span class="n"></span>&lt;colgroup&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……
+                                        <br>
+                                      <span class="n"></span><span class="n"></span>&lt;/colgroup&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;thead&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/thead&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;tbody&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/tbody&gt;<br>
+                                    <span class="n"></span>&lt;/table&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                             <pre>
+                                <code>
+                                    <span class="n"></span>&lt;h3 class=&quot;title&quot;&gt;列边框表格&lt;/h3&gt;<br>
+                                    <span class="n"></span>&lt;table class=&quot;zui-table&quot; zui-even=&quot;&quot; zui-skin=&quot;row&quot;&gt; <br>
+                                      <span class="n"></span><span class="n"></span>&lt;colgroup&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……
+                                        <br>
+                                      <span class="n"></span><span class="n"></span>&lt;/colgroup&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;thead&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/thead&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;tbody&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/tbody&gt;<br>
+                                    <span class="n"></span>&lt;/table&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                             <pre>
+                                <code>
+                                    <span class="n"></span>&lt;h3 class=&quot;title&quot;&gt;无边框表格&lt;/h3&gt;<br>
+                                    <span class="n"></span>&lt;table class=&quot;zui-table&quot; zui-even=&quot;&quot; zui-skin=&quot;noborder&quot;&gt; <br>
+                                      <span class="n"></span><span class="n"></span>&lt;colgroup&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……
+                                        <br>
+                                      <span class="n"></span><span class="n"></span>&lt;/colgroup&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;thead&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/thead&gt;<br>
+                                      <span class="n"></span><span class="n"></span>&lt;tbody&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span class="n"></span>……<br>
+                                      <span class="n"></span><span class="n"></span>&lt;/tbody&gt;<br>
+                                    <span class="n"></span>&lt;/table&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="label">
+                            <h2>标签样式</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>标签使用说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example">
+                            <span class="zui-label">默认标签</span>
+                            <span class="zui-label zui-label-main">主体标签</span>
+                            <span class="zui-label zui-label-success">成功标签</span>
+                            <span class="zui-label zui-label-warning">危险标签</span>
+                            <span class="zui-label zui-label-danger">警告标签</span>
+                            <span class="zui-label zui-label-disabled">禁止标签</span>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;span class=&quot;zui-label&quot;&gt;默认标签&lt;/span&gt;
+                                    <br>&lt;span class=&quot;zui-label zui-label-main&quot;&gt;主体标签&lt;/span&gt;
+                                    <br>&lt;span class=&quot;zui-label zui-label-success&quot;&gt;成功标签&lt;/span&gt;
+                                    <br>&lt;span class=&quot;zui-label zui-label-warning&quot;&gt;危险标签&lt;/span&gt;
+                                    <br>&lt;span class=&quot;zui-label zui-label-danger&quot;&gt;警告标签&lt;/span&gt;
+                                    <br>&lt;span class=&quot;zui-label zui-label-disabled&quot;&gt;禁止标签&lt;/span&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="title">
+                            <h2>标题样式</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>标题使用说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example">
+                            <h1>标题一</h1>
+                            <h2>标题二</h2>
+                            <h3>标题三</h3>
+                            <h4>标题四</h4>
+                            <h5>标题五</h5>
+                            <h6>标题六</h6>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;h1&gt;标题一&lt;/h1&gt;<br>
+                                    &lt;h2&gt;标题二&lt;/h2&gt;<br>
+                                    &lt;h3&gt;标题三&lt;/h3&gt;<br>
+                                    &lt;h4&gt;标题四&lt;/h4&gt;<br>
+                                    &lt;h5&gt;标题五&lt;/h5&gt;<br>
+                                    &lt;h6&gt;标题六&lt;/h6&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>另外一种实现办法</h4>
+                            <p>在需要的元素上面使用class类 zui-h* 即可对任何元素实现h1 h2 h3 h4 h5 h6的等同效果</p>
+                        </div>
+                        <div class="bs-example" id="title">
+                            <p class="zui-h1 zui-color-main">标题一</p>
+                            <p class="zui-h2 zui-color-assist">标题二</p>
+                            <p class="zui-h3">标题三</p>
+                            <p class="zui-h4">标题四</p>
+                            <p class="zui-h5">标题五</p>
+                            <p class="zui-h6">标题六</p>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;p class=&quot;zui-h1&quot;&gt;标题一&lt;/p&gt;
+                                    <br>&lt;p class=&quot;zui-h2&quot;&gt;标题二&lt;/p&gt;
+                                    <br>&lt;p class=&quot;zui-h3&quot;&gt;标题三&lt;/p&gt;
+                                    <br>&lt;p class=&quot;zui-h4&quot;&gt;标题四&lt;/p&gt;
+                                    <br>&lt;p class=&quot;zui-h5&quot;&gt;标题五&lt;/p&gt;
+                                    <br>&lt;p class=&quot;zui-h6&quot;&gt;标题六&lt;/p&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="page">
+                            <h2>翻页组件</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>翻页组件使用说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div>
+                                <div class="zui-page">
+                                    <a href="javascript:;" class="zui-page-prev">上一页</a>
+                                    <a href="javascript:;" class="zui-page-first" title="首页">首页</a>
+                                    <span>…</span>
+                                    <a href="javascript:;">3</a>
+                                    <a href="javascript:;">4</a>
+                                    <span class="zui-page-curr"><em class="zui-page-em"></em><em>5</em></span><a href="javascript:;">6</a>
+                                    <a href="javascript:;">7</a>
+                                    <span>…</span>
+                                    <a href="javascript:;" class="zui-page-last" title="尾页">末页</a>
+                                    <a href="javascript:;" class="zui-page-next">下一页</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-page&quot;&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-prev&quot;&gt;上一页&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-first&quot; title=&quot;首页&quot;&gt;首页&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;span&gt;…&lt;/span&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;3&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;4&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;span class=&quot;zui-page-curr&quot;&gt;&lt;em class=&quot;zui-page-em&quot;&gt;&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;/span&gt;&lt;a href=&quot;javascript:;&quot;&gt;6&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;7&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;span&gt;…&lt;/span&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-last&quot; title=&quot;尾页&quot;&gt;末页&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-next&quot;&gt;下一页&lt;/a&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="alert">
+                            <h2>警告框样式</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>警告框使用说明</h4>
+                            <p>警告框组件通过提供一些灵活的预定义消息，为常见的用户动作提供反馈消息。</p>
+                            <p>将任意文本和一个可选的关闭按钮组合在一起就能组成一个警告框，.zui-alert 类是必须要设置的，另外我们还提供了有特殊意义的4个类（例如，.zui-alert-success），代表不同的警告信息。</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-alert zui-alert-success" >
+                                <strong>成功提示！</strong>你成功地阅读这个警告消息
+                            </div>
+                            <div class="zui-alert zui-alert-info" >
+                                <strong>继续提示！</strong>你成功地阅读这个警告消息
+                            </div>
+                            <div class="zui-alert zui-alert-warning" >
+                                <strong>警告提示！</strong>
+                                你成功地阅读这个警告消息
+                            </div>
+                            <div class="zui-alert zui-alert-danger" >
+                                <strong>危险提示！</strong>你成功地阅读这个警告消息
+                            </div>
+                            <h3 class="title">可关闭警告框</h3>
+                            <p class="txt-example">依赖于jquery.js 和 zui.js</p>
+                            <div class="zui-alert zui-alert-warning zui-alert-dismissible" role="alert">
+                              <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                              <strong>危险提示！</strong>这是一个可以关闭的微信警告窗体
+                            </div>
+
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                </div>
+                <div class="zui-col-3">
+                    <div id="menu-nav">
+                        <ul>
+                            <li><a href="#font">字体</a></li>
+                            <li><a href="#assist">辅助元素</a></li>
+                            <li><a href="#grid">栅格系统</a></li>
+                            <li><a href="#bottom">按钮样式</a></li>
+                            <li><a href="#form">表单样式</a></li>
+                            <li><a href="#table">表格样式</a></li>
+                            <li><a href="#label">标签样式</a></li>
+                            <li><a href="#title">标题样式</a></li>
+                            <li><a href="#page">翻页组件</a></li>
+                            <li><a href="#alert">警告框组件</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="zui-main">
+        <p class="zui-text-center">zui使用说明文档</p>
+    </div>
+</body>
+</html>

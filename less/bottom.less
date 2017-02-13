@@ -1,0 +1,106 @@
+@import "variables.less";
+
+//
+// .centered-line(@height, @is-input)
+//
+// 单行文本的垂直居中
+// .centered-line(30px)
+// .centered-line(30px, true)
+
+.centered-line(@height) {
+    .centered-line(@height, false);
+}
+.centered-line(@height, @is-input) when not (@is-input) {
+    height: @height;
+    line-height: @height;
+}
+.centered-line(@height, true) when not (@support-ie-version < 9) {
+    height: @height;
+}
+.centered-line(@height, true) when (@support-ie-version < 9) {
+    height: @height;
+    line-height: ~"@{height}\0"; // IE6-8
+}
+
+.zui-btn{
+    display: inline-block;
+    padding: 0 18px;
+    background-color: @default-main-color;
+    color: #fff;
+    white-space: nowrap;
+    text-align: center;
+    border:solid 1px @default-main-color;
+    border-radius: 2px;
+    cursor: pointer;
+    .border-radius(2px);
+    .opacity(90%);
+    .centered-line(40px);
+    &:hover{
+        color: #fff;
+        .opacity(80%);
+    }
+
+}
+.zui-btn-primary{
+    border: 1px solid #C9C9C9;
+    background-color: #fff;
+    color: #555;
+    &:hover{
+        color: #555;
+        .opacity(80%);
+    }
+}
+.zui-btn-assist{
+    background-color: @default-assist-color;
+    border-color: @default-assist-color;
+}
+.zui-btn-success{
+    background-color: #00BC4B;
+    border-color: #00BC4B;
+}
+.zui-btn-warning{
+    background-color: #F7B824;
+    border-color: #F7B824;
+}
+.zui-btn-danger{
+    background-color: #da0808;
+    border-color: #da0808;
+}
+.zui-btn-disabled, .zui-btn-disabled&:hover{
+    border: 1px solid #e6e6e6;
+    background-color: #FBFBFB;
+    color: #C9C9C9;
+    cursor: not-allowed;
+    opacity: 1;
+}
+.zui-btn-link{
+    background-color: transparent;
+    color: #337ab7;
+    border-radius: 0;
+    border:none;
+    &:hover{
+        color: #337ab7;
+        text-decoration: underline;
+    }
+}
+
+// 按钮规格
+.zui-btn-big {
+    padding: 0 30px;
+    font-size: 16px;
+    .centered-line(44px;)
+}
+.zui-btn-small {
+    padding: 0 10px;
+    font-size: 12px;
+    .centered-line(30px;)
+}
+.zui-btn-mini {
+    padding: 0 5px;
+    font-size: 12px;
+    .centered-line(22px;)
+}
+.zui-btn-block{
+    display: block;
+    width: 100%;
+}
