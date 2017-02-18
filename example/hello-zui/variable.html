@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>ZUI方案演示</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../../dist/css/zui.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/dome.css">
+</head>
+<body style="background-color:#f0efef; padding-top:50px;">
+    <div id="zui-nav" class="zui-nav zui-nav-fixed">
+        <ul class="zui-nav-box">
+            <li class="zui-nav-item">
+                <a href="index.html">全局样式</a>
+            </li>
+            <li class="zui-nav-item">
+                <a href="javascript:;">组件仓库<span class="zui-mark">(23)</span></a>
+                <dl class="zui-nav-child">
+                    <dd>
+                        <a href="font.html">图标仓库</a>
+                    </dd>
+                    <dd>
+                        <a href="control.html">控件组件</a>
+                    </dd>
+                    <dd>
+                        <a href="template.html">页面模板</a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="zui-nav-item">
+                <a class="zui-active" href="variable.html">变量参数</a>
+            </li>
+            <li class="zui-nav-item">
+                <a href="">网站案例</a>
+            </li>
+            <ul class="zui-nav-right">
+                <li class="zui-nav-item">
+                    <a href="">右边菜单</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="zui-container">
+        <div class="zui-main" style="background-color: #fff;">
+            <div class="zui-fluid">
+            <div class="zui-row">
+                <div class="zui-col-9">
+                     <div class="zui-box">
+                        <div class="zui-main-title" id="tool">
+                            <h2>编译工具</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>编译工具说明</h4>
+                            <p><a class="zui-label zui-label-success" href="http://koala-app.com/index-zh.html" target="_black">下载编译器</a></p>
+                            <p>LESS文件采用考拉编译器进行less的编译,配置参数如图：</p>
+                            <h5>1、路径配置：dist\css</h5>
+                            <h5>2、编译参数：Autoprefix 设置css3属性自动添加浏览器前缀。</h5>
+                            <h5>3、输出方式：compress 设置压缩CSS文件</h5>
+                        </div>
+                        <div class="bs-example zui-text-center" id="">
+                            <img src="images/20170217165544.png" width="600" alt="">
+                        </div>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="catalogue">
+                            <h2>文件目录</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>文件目录说明</h4>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                            <code class="language-html" >
+                            ├── dist                    项目编译生成文件<br>
+                            │   ├── css                 编译之后css文件<br>
+                            │   ├── js                  编译之后js文件<br>
+                            │   ├── images              ZUI用到的图片目录<br>
+                            ├── example                 zui框架演示dome<br>
+                            │   ├── ccs                 演示页面的css<br>
+                            │   ├── hello-zui           演示项目<br>
+                            ├── font                    字体图标文件<br>
+                            ├── js                      zui的框架js<br>
+                            ├── less                    存放less文件<br>
+                            ├── pagetemplate            页面模板文件<br>
+                            │   ├── login               会员登录<br>
+                            │   ├── register            注册模块<br>
+                            │   ├── member              会员中心<br>
+                            │   ├── help                帮助中心<br>
+                            │   ├── feedback            意见反馈<br>
+                            ├── null                    **模块<br>
+                            └──
+                            </code>
+                        </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="parameter">
+                            <h2>系统变量参数</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>系统变量参数说明</h4>
+                            <p>@default-font-size: 14px; 的格式去定义一个变量</p>
+                        </div>
+                        <div class="bs-example">
+                            <table class="zui-table">
+                                <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                                <col></colgroup>
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>默认值</th>
+                                    <th>说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>support-html5</td>
+                                    <td>true</td>
+                                    <td>幻灯片播放间隔</td>
+                                </tr>
+                                <tr>
+                                    <td>support-ie-version</td>
+                                    <td>7</td>
+                                    <td>鼠标悬停暂停播放</td>
+                                </tr>
+                                <tr>
+                                    <td>support-old-ie</td>
+                                    <td>-</td>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <td>use-autoprefixer</td>
+                                    <td>true</td>
+                                    <td>添加CSS3 浏览器前缀</td>
+                                </tr>
+                                <tr>
+                                    <td>default-font-size</td>
+                                    <td>14px</td>
+                                    <td>默认字体大小</td>
+                                </tr>
+                                <tr>
+                                    <td>default-text-color</td>
+                                    <td>#333</td>
+                                    <td>默认字体颜色</td>
+                                </tr>
+
+                                <tr>
+                                    <td>default-text-assist-color</td>
+                                    <td>#999</td>
+                                    <td>网站辅助色字体颜色</td>
+                                </tr>
+                                <tr>
+                                    <td>default-input-placeholder-color</td>
+                                    <td>#999</td>
+                                    <td>字体输入框默认颜色</td>
+                                </tr>
+                                <tr>
+                                    <td>default-base-font-family</td>
+                                    <td>'Helvetica Neue', Arial, sans-serif</td>
+                                    <td>默认字体大小</td>
+                                </tr>
+                                <tr>
+                                    <td>default-main-color</td>
+                                    <td>#fb5a02</td>
+                                    <td>网站主色</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-assist-color</td>
+                                    <td>@default-main-color + #666;</td>
+                                    <td>网站辅助色，可以通过计算去得到辅助色彩也可直接写值</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-succeed-color</td>
+                                    <td>#00BC4B</td>
+                                    <td>成功色</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-warning-color</td>
+                                    <td>#FF5722</td>
+                                    <td>危险色</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-danger-color</td>
+                                    <td>#da0808</td>
+                                    <td>警告色</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-layout-container</td>
+                                    <td>100%</td>
+                                    <td>100%宽度</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-layout-main</td>
+                                    <td>1180px</td>
+                                    <td>网站主体宽度</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-border-radius</td>
+                                    <td>5px</td>
+                                    <td>默认的圆角度数，.border-radius()的写法默认的圆角度数就是5px,修改圆角度数为3px写法：.border-radius(3px)</td>
+                                </tr>
+                                <tr>
+                                    <td>@default-box-shadow</td>
+                                    <td>0 1px 3px rgba(0, 0, 0, 0.25)</td>
+                                    <td>默认的倒影.box-shadow()的写法默认的倒影就是0 1px 3px rgba(0, 0, 0, 0.25),修改倒影的值写法：.box-shadow(0 3px 3px rgba(0, 0, 0, 0.25))</td>
+                                </tr>
+                            </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="zui-col-3">
+                    <div id="menu-nav">
+                        <ul>
+                            <li><a href="#tool">编译工具</a></li>
+                            <li><a href="#catalogue">文件目录</a></li>
+                            <li><a href="#parameter">系统变量参数</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="zui-main">
+        <p class="zui-text-center">zui使用说明文档</p>
+    </div>
+</body>
+<script src="../../js/jquery-1.9.1.min.js"></script>
+<script src="../../js/zui.js"></script>
+</html>

@@ -1,0 +1,64 @@
+.zui-tab{
+    margin: 10px 0;
+    overflow: hidden;
+    text-align: left!important;
+    .zui-tab-title{
+        position: relative;
+        left: 0;
+        height: 40px;
+        white-space: nowrap;
+        font-size: 0;
+        li{
+            float: left;
+            font-size: 14px;
+            position: relative;
+            line-height: 40px;
+            min-width: 65px;
+            padding: 0 10px;
+            cursor: pointer;
+            border-radius: 2px 2px 0 0;
+        }
+        .zui-active{
+            background: #fff;
+            border-left: #e2e2e2 1px solid;
+            border-right: #e2e2e2 1px solid;
+            border-top: #e2e2e2 1px solid;
+            bottom: 0px;
+            position: relative;
+        }
+    }
+    .zui-tab-content{
+        border-top: 1px solid #e2e2e2;
+        padding: 10px;
+    }
+    .zui-tab-item{
+        display: none;
+    }
+    .zui-tab-show{
+        display: block;
+    }
+}
+// 极简风格
+.zui-tab[zui-skin=brief]{
+   .zui-active{
+        color: @default-main-color;
+        border: none;
+        border-bottom: @default-main-color solid 3px;
+        bottom: 2px;
+   }
+}
+// 卡片风格
+.zui-tab[zui-skin=card]{
+    border: 1px solid #e2e2e2;
+    border-radius: 2px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+    .zui-tab-title{
+        background: #f2f2f2;
+    }
+   .zui-active{
+        border:#e2e2e2 solid 1px;
+        border-top: transparent;
+        border-bottom: #fff solid 1px;
+        bottom: 0px;
+   }
+}

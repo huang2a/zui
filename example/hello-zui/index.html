@@ -9,7 +9,45 @@
 <link href="../../dist/css/zui.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/dome.css">
 </head>
-<body style="background-color: #f0efef;">
+<body style="background-color:#f0efef; padding-top:50px;">
+    <div id="zui-nav" class="zui-nav zui-nav-fixed">
+        <ul class="zui-nav-box">
+            <li class="zui-nav-item">
+                <a class="zui-active" href="##">全局样式</a>
+            </li>
+            <li class="zui-nav-item">
+                <a href="javascript:;">组件仓库<span class="zui-mark">(23)</span></a>
+                <dl class="zui-nav-child">
+                    <dd>
+                        <a href="font.html">图标仓库</a>
+                    </dd>
+                    <dd>
+                        <a href="control.html">控件组件</a>
+                    </dd>
+                    <dd>
+                        <a href="template.html">页面模板</a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="zui-nav-item">
+                <a href="variable.html">变量参数</a>
+            </li>
+            <li class="zui-nav-item">
+                <a href="">网站案例</a>
+            </li>
+            <ul class="zui-nav-right">
+                <li class="zui-nav-item zui-nav-nowidth">
+                    <a href=""><i class="zui-iconfont">&#xe667;</i></a>
+                </li>
+                <li class="zui-nav-item">
+                    <a href=""><i class="zui-iconfont">&#xe6af;</i>购物车</a>
+                </li>
+                <li class="zui-nav-item">
+                    <a href="">右边菜单</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
     <div class="zui-container">
         <div class="zui-main" style="background-color: #fff;">
             <div class="zui-fluid">
@@ -235,6 +273,21 @@
                                 </code>
                             </pre>
                         </figure>
+                        <div class="bs-callout">
+                            <h4>图标按钮</h4>
+                            <p>为按钮追加class类 .zui-btn-big .zui-btn-small .zui-btn-mini .zui-btn-block为不同的按钮设置不同的大小样式</p>
+                        </div>
+                        <div class="bs-example">
+                            <button class="zui-btn"><i class="zui-iconfont">&#xe646;</i></button>
+                            <button class="zui-btn zui-btn-success"><i class="zui-iconfont">&#xe645;</i></button>
+                            <button class="zui-btn zui-btn-warning"><i class="zui-iconfont">&#xe663;</i></button>
+                            <button class="zui-btn zui-btn-danger"><i class="zui-iconfont">&#xe6b4;</i></button>
+                            <p>这是分割线</p>
+                            <button class="zui-btn"><i class="zui-iconfont">&#xe646;</i>这是个错误</button>
+                            <button class="zui-btn zui-btn-success"><i class="zui-iconfont">&#xe645;</i>这是个正确</button>
+                            <button class="zui-btn zui-btn-warning"><i class="zui-iconfont">&#xe663;</i>这是个警告</button>
+                            <button class="zui-btn zui-btn-danger zui-btn-small"><i class="zui-iconfont">&#xe6b4;</i>这是个删除</button>
+                        </div>
                     </div>
                     <div class="zui-box">
                         <div class="zui-main-title"  id="form">
@@ -835,50 +888,6 @@
                         </figure>
                     </div>
                     <div class="zui-box">
-                        <div class="zui-main-title" id="page">
-                            <h2>翻页组件</h2>
-                        </div>
-                        <hr>
-                        <div class="bs-callout">
-                            <h4>翻页组件使用说明</h4>
-                            <p>1</p>
-                        </div>
-                        <div class="bs-example" id="">
-                            <div>
-                                <div class="zui-page">
-                                    <a href="javascript:;" class="zui-page-prev">上一页</a>
-                                    <a href="javascript:;" class="zui-page-first" title="首页">首页</a>
-                                    <span>…</span>
-                                    <a href="javascript:;">3</a>
-                                    <a href="javascript:;">4</a>
-                                    <span class="zui-page-curr"><em class="zui-page-em"></em><em>5</em></span><a href="javascript:;">6</a>
-                                    <a href="javascript:;">7</a>
-                                    <span>…</span>
-                                    <a href="javascript:;" class="zui-page-last" title="尾页">末页</a>
-                                    <a href="javascript:;" class="zui-page-next">下一页</a>
-                                </div>
-                            </div>
-                        </div>
-                        <figure class="highlight">
-                            <pre>
-                                <code class="language-html" >
-                                    &lt;div class=&quot;zui-page&quot;&gt;<br>
-                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-prev&quot;&gt;上一页&lt;/a&gt;<br>
-                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-first&quot; title=&quot;首页&quot;&gt;首页&lt;/a&gt;<br>
-                                        <span class="n"></span>&lt;span&gt;…&lt;/span&gt;<br>
-                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;3&lt;/a&gt;<br>
-                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;4&lt;/a&gt;<br>
-                                        <span class="n"></span>&lt;span class=&quot;zui-page-curr&quot;&gt;&lt;em class=&quot;zui-page-em&quot;&gt;&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;/span&gt;&lt;a href=&quot;javascript:;&quot;&gt;6&lt;/a&gt;<br>
-                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;7&lt;/a&gt;<br>
-                                        <span class="n"></span>&lt;span&gt;…&lt;/span&gt;<br>
-                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-last&quot; title=&quot;尾页&quot;&gt;末页&lt;/a&gt;<br>
-                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-next&quot;&gt;下一页&lt;/a&gt;<br>
-                                    &lt;/div&gt;
-                                </code>
-                            </pre>
-                        </figure>
-                    </div>
-                    <div class="zui-box">
                         <div class="zui-main-title" id="alert">
                             <h2>警告框样式</h2>
                         </div>
@@ -964,114 +973,6 @@
                             </pre>
                         </figure>
                     </div>
-                    <div class="zui-box">
-                        <div class="zui-main-title" id="nav">
-                            <h2>导航组件样式</h2>
-                        </div>
-                        <hr>
-                        <div class="bs-callout">
-                            <h4>导航组件用法说明</h4>
-                            <p>1</p>
-                        </div>
-                        <div class="bs-example" id="nav">
-                            <div id="zui-nav" class="zui-nav">
-                                <ul class="zui-nav-box">
-                                    <li class="zui-nav-item">
-                                        <a class="active" href="index.html">首页</a>
-                                    </li>
-                                    <li class="zui-nav-item">
-                                        <a href="javascript:;">我要投资(<span class="col-huang">23</span>)</a>
-                                        <dl class="zui-nav-child">
-                                            <dd>
-                                                <a href="invest/index.html">预留分类</a>
-                                            </dd>
-                                            <dd>
-                                                <a href="invest/index.html">预留分类</a>
-                                            </dd>
-                                            <dd>
-                                                <a href="invest/index.html">预留分类</a>
-                                            </dd>
-                                        </dl>
-                                    </li>
-                                    <li class="zui-nav-item">
-                                        <a href="deal/index.html">会员交易(<span class="col-huang">3</span>)</a>
-                                    </li>
-                                    <li class="zui-nav-item">
-                                        <a href="report/index.html">运营报告</a>
-                                    </li>
-                                    <li class="zui-nav-item">
-                                        <a href="about/index.html">关于我们</a>
-                                    </li>
-                                    <li class="zui-nav-item">
-                                        <a href="member/index.html" target="_black">会员中心</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <figure class="highlight">
-                            <pre>
-                                <code class="language-html" >
-
-                                </code>
-                            </pre>
-                        </figure>
-                        <div class="bs-example" id="">
-                            <div class="bs-example" id="">
-                                <div class="list">
-                                    <ul class="yiji">
-                                        <li><a href="##">中国美协章程</a></li>
-                                        <li><a href="##" class="inactive">团体会员</a>
-                                            <ul style="display: none">
-                                                <li><a href="##" class="inactive active">美协机关</a>
-                                                    <ul>
-                                                        <li><a href="##">办公室</a></li>
-                                                        <li><a href="##">人事处</a></li>
-                                                        <li><a href="##">组联部</a></li>
-                                                        <li><a href="##">外联部</a></li>
-                                                        <li><a href="##">研究部</a></li>
-                                                        <li><a href="##">维权办</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="last"><a href="##">《美术》杂志社</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="##" class="inactive">组织机构</a>
-                                            <ul style="display: none">
-                                                <li><a href="##" class="inactive active">美协机关</a>
-                                                    <ul>
-                                                        <li><a href="##">办公室</a></li>
-                                                        <li><a href="##">人事处</a></li>
-                                                        <li><a href="##">组联部</a></li>
-                                                        <li><a href="##">外联部</a></li>
-                                                        <li><a href="##">研究部</a></li>
-                                                        <li><a href="##">维权办</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="##" class="inactive active">中国文联美术艺术中心</a>
-                                                    <ul>
-                                                        <li><a href="##">综合部</a></li>
-                                                        <li><a href="##">大型活动部</a></li>
-                                                        <li><a href="##">展览部</a></li>
-                                                        <li><a href="##">艺委会工作部</a></li>
-                                                        <li><a href="##">信息资源部</a></li>
-                                                        <li><a href="##">双年展办公室</a></li>
-                                                    </ul>
-                                                </li>
-                                                <li class="last"><a href="##">《美术》杂志社</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <figure class="highlight">
-                            <pre>
-                                <code class="language-html" >
-
-                                </code>
-                            </pre>
-                        </figure>
-                    </div>
                 </div>
                 <div class="zui-col-3">
                     <div id="menu-nav">
@@ -1084,10 +985,8 @@
                             <li><a href="#table">表格样式</a></li>
                             <li><a href="#label">标签样式</a></li>
                             <li><a href="#title">标题样式</a></li>
-                            <li><a href="#page">翻页组件</a></li>
                             <li><a href="#alert">警告框组件</a></li>
                             <li><a href="#progress">进度条组件</a></li>
-                            <li><a href="#nav">导航组件</a></li>
                         </ul>
                     </div>
                 </div>

@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>ZUI方案演示</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="../../dist/css/zui.css" rel="stylesheet">
+<link rel="stylesheet" href="../css/dome.css">
+</head>
+<body style="background-color:#f0efef; padding-top:50px;">
+    <div id="zui-nav" class="zui-nav zui-nav-fixed">
+        <ul class="zui-nav-box">
+            <li class="zui-nav-item">
+                <a href="index.html">全局样式</a>
+            </li>
+            <li class="zui-nav-item">
+                <a class="zui-active" href="javascript:;">组件仓库<span class="zui-mark">(23)</span></a>
+                <dl class="zui-nav-child">
+                    <dd>
+                        <a href="font.html">字体仓库</a>
+                    </dd>
+                    <dd>
+                        <a href="control.html">控件组件</a>
+                    </dd>
+                    <dd>
+                        <a href="template.html">页面模板</a>
+                    </dd>
+                </dl>
+            </li>
+            <li class="zui-nav-item">
+                <a href="variable.html">变量参数</a>
+            </li>
+            <li class="zui-nav-item">
+                <a href="">网站案例</a>
+            </li>
+            <ul class="zui-nav-right">
+                <li class="zui-nav-item">
+                    <a href="">右边菜单</a>
+                </li>
+            </ul>
+        </ul>
+    </div>
+    <div class="zui-container">
+        <div class="zui-main" style="background-color: #fff;">
+            <div class="zui-fluid">
+            <div class="zui-row">
+                <div class="zui-col-9">
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="page">
+                            <h2>翻页组件</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>翻页组件使用说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div>
+                                <div class="zui-page">
+                                    <a href="javascript:;" class="zui-page-prev">上一页</a>
+                                    <a href="javascript:;" class="zui-page-first" title="首页">首页</a>
+                                    <span>…</span>
+                                    <a href="javascript:;">3</a>
+                                    <a href="javascript:;">4</a>
+                                    <span class="zui-page-curr"><em class="zui-page-em"></em><em>5</em></span><a href="javascript:;">6</a>
+                                    <a href="javascript:;">7</a>
+                                    <span>…</span>
+                                    <a href="javascript:;" class="zui-page-last" title="尾页">末页</a>
+                                    <a href="javascript:;" class="zui-page-next">下一页</a>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-page&quot;&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-prev&quot;&gt;上一页&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-first&quot; title=&quot;首页&quot;&gt;首页&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;span&gt;…&lt;/span&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;3&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;4&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;span class=&quot;zui-page-curr&quot;&gt;&lt;em class=&quot;zui-page-em&quot;&gt;&lt;/em&gt;&lt;em&gt;5&lt;/em&gt;&lt;/span&gt;&lt;a href=&quot;javascript:;&quot;&gt;6&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;7&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;span&gt;…&lt;/span&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-last&quot; title=&quot;尾页&quot;&gt;末页&lt;/a&gt;<br>
+                                        <span class="n"></span>&lt;a href=&quot;javascript:;&quot; class=&quot;zui-page-next&quot;&gt;下一页&lt;/a&gt;<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="nav">
+                            <h2>导航组件样式</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>水平导航组件用法说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example" id="nav">
+                            <div id="zui-nav" class="zui-nav">
+                                <ul class="zui-nav-box">
+                                    <li class="zui-nav-item">
+                                        <a class="active" href="##">首页</a>
+                                    </li>
+                                    <li class="zui-nav-item">
+                                        <a href="javascript:;">我要投资<span class="zui-mark">(23)</span></a>
+                                        <dl class="zui-nav-child">
+                                            <dd>
+                                                <a href="##">二级分类</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="##">二级分类</a>
+                                            </dd>
+                                            <dd>
+                                                <a href="##">二级分类</a>
+                                            </dd>
+                                        </dl>
+                                    </li>
+                                    <li class="zui-nav-item">
+                                        <a href="##">会员交易</a>
+                                    </li>
+                                    <li class="zui-nav-item">
+                                        <a href="">运营报告</a>
+                                    </li>
+                                    <ul class="zui-nav-right">
+                                        <li class="zui-nav-item">
+                                            <a href="">右边菜单</a>
+                                        </li>
+                                    </ul>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>垂直导航组件用法说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="list zui-tree">
+                                <ul class="yiji zui-tree-box">
+                                    <li class="zui-tree-item">
+                                        <a href="##">没有下拉</a>
+                                    </li>
+                                    <li class="zui-tree-item "><a href="##" class="zui-inactive-off zui-inactive-on">默认展开</a>
+                                        <ul class="zui-nav-two zui-nav-show">
+                                            <li><a href="##">不能展开</a>
+                                            </li>
+                                            <li><a href="##">这个也不行</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="zui-tree-item"><a href="##" class="zui-inactive-off">二级菜单</a>
+                                        <ul class="zui-nav-two">
+                                            <li><a href="##">不能展开</a>
+                                            </li>
+                                            <li><a href="##">这个也不行</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="zui-tree-item"><a href="##" class="zui-inactive-off">三级菜单</a>
+                                        <ul class="zui-nav-two">
+                                            <li><a href="##" class="zui-inactive-off">点一下试试</a>
+                                                <ul class="zui-nav-three">
+                                                    <li><a href="##">办公室</a></li>
+                                                    <li><a href="##">人事处</a></li>
+                                                    <li><a href="##">组联部</a></li>
+                                                    <li><a href="##">外联部</a></li>
+                                                    <li><a href="##">研究部</a></li>
+                                                    <li><a href="##">维权办</a></li>
+                                                </ul>
+                                            </li>
+                                            <li class=""><a class="zui-inactive-off" href="##">这里也还有</a>
+                                                <ul class="zui-nav-three">
+                                                    <li><a href="##">办公室</a></li>
+                                                    <li><a href="##">人事处</a></li>
+                                                    <li><a href="##">组联部</a></li>
+                                                    <li><a href="##">外联部</a></li>
+                                                    <li><a href="##">研究部</a></li>
+                                                    <li><a href="##">维权办</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="tab">
+                            <h2>水平TAB选卡切换</h2>
+                        </div>
+                        <hr>
+                        <div class="bs-callout">
+                            <h4>默认TAB选卡切换用法说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-tab"  zui-skin="default">
+                                <div class="zui-tab-title">
+                                    <ul>
+                                        <li class="zui-active">
+                                            网站设置
+                                        </li>
+                                        <li>
+                                            用户管理
+                                        </li>
+                                        <li>
+                                            权限分配
+                                        </li>
+                                        <li>
+                                            商品管理
+                                        </li>
+                                        <li>
+                                            订单管理
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="zui-tab-content">
+                                    <div class="zui-tab-item zui-tab-show">
+                                        <h3>tab网站设置</h3>
+                                        <p>这是一个很神奇的TAB选卡</p>
+                                        <p>你可以通过从新定义zui-skin="newname" (newname为你的皮肤名称)的样式进行皮肤的修改。</p>
+                                        <p>
+                                        .zui-tab[zui-skin=default]{<br>
+                                        <span class="n">    </span>//这里先皮肤新样式<br>
+                                        }</p>
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab用户管理
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab权限分配
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab商品管理
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab订单管理
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-tab&quot; zui-skin=&quot;default&quot;&gt;<br>
+                                        <span class="n"></span>&lt;div class=&quot;zui-tab-title&quot;&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;ul&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-active&quot;&gt;网站设置&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;用户管理&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;权限分配&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;商品管理&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;订单管理&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/ul&gt;<br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;div class=&quot;zui-tab-content&quot;&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-tab-item zui-tab-show&quot;&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;h3&gt;tab网站设置&lt;/h3&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;p&gt;这是一个很神奇的TAB选卡&lt;/p&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;p&gt;你可以通过从新定义zui-skin=&quot;newname&quot; (newname为你的皮肤名称)的样式进行皮肤的修改。&lt;/p&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/div&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-tab-item&quot;&gt;tab用户管理&lt;/div&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-tab-item&quot;&gt;tab权限分配&lt;/div&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-tab-item&quot;&gt;tab商品管理&lt;/div&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-tab-item&quot;&gt;tab订单管理&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                &lt;/div&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>极简风格TAB选卡切换用法说明</h4>
+                            <p>使用皮肤zui-skin="brief"</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-tab"  zui-skin="brief">
+                                <div class="zui-tab-title">
+                                    <ul>
+                                        <li class="zui-active">
+                                            <i class="zui-iconfont">&#xe68a;</i>网站设置
+                                        </li>
+                                        <li>
+                                            <i class="zui-iconfont">&#xe6b7;</i>用户管理
+                                        </li>
+                                        <li>
+                                            <i class="zui-iconfont">&#xe67c;</i>权限分配
+                                        </li>
+                                        <li>
+                                            <i class="zui-iconfont">&#xe675;</i>商品管理
+                                        </li>
+                                        <li>
+                                            <i class="zui-iconfont">&#xe699;</i>订单管理
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="zui-tab-content">
+                                    <div class="zui-tab-item zui-tab-show">
+                                        <h3>tab网站设置</h3>
+                                        <p>简介风格TAB选卡切换用法说明</p>
+                                        <p>你可以通过从新定义zui-skin="brief"就可以启用极简风格</p>
+                                        <h4>LESS文件写法</h4>
+                                        <p>
+                                            .zui-tab[zui-skin=brief]{<br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;.zui-active{<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;color: @default-main-color;<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border: none;<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;border-bottom: @default-main-color solid 3px;<br>
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bottom: 2px;<br>
+                                               &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                            }
+                                        </p>
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab用户管理
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab权限分配
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab商品管理
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab订单管理
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bs-callout">
+                            <h4>卡片风格TAB选卡切换用法说明</h4>
+                            <p>使用皮肤zui-skin="card"</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-tab"  zui-skin="card">
+                                <div class="zui-tab-title">
+                                    <ul>
+                                        <li class="zui-active">
+                                            网站设置
+                                        </li>
+                                        <li>
+                                            用户管理
+                                        </li>
+                                        <li>
+                                            权限分配
+                                        </li>
+                                        <li>
+                                            商品管理
+                                        </li>
+                                        <li>
+                                            订单管理
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="zui-tab-content">
+                                    <div class="zui-tab-item zui-tab-show">
+                                        <h3>tab网站设置</h3>
+                                        <h4>卡片风格TAB选卡切换用法说明</h4>
+                                        <h4>默认宽度是相对于父元素100%适应的，你也可以固定宽度。</h4>
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab用户管理
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab权限分配
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab商品管理
+                                    </div>
+                                    <div class="zui-tab-item">
+                                        tab订单管理
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="carousel">
+                            <h2>图片轮播组件</h2>
+                        </div>
+                        <hr>
+                        <p class="txt-example">依赖于jquery.js 和 zui.js。必须给定zui-carousel-animated的div一个宽度和高度</p>
+                        <div class="bs-callout">
+                            <h4>默认使用说明</h4>
+                            <p>通过<strong>$('.zui-carousel-dome').slidizle();</strong>方法调用。</p>
+                        </div>
+
+                        <div class="bs-example" id="">
+                            <div class="zui-carousel-dome zui-carousel-dome1" zui-data-carousel>
+                                <ul zui-data-carousel-content>
+                                    <li style="background-image: url('images/01.jpg')"></li>
+                                    <li style="background-image: url('images/02.jpg')"></li>
+                                    <li style="background-image: url('images/03.jpg')"></li>
+                                </ul>
+
+                                <div zui-data-carousel-next>
+                                    <span class="zui-font36 zui-fontw600">》</span>
+                                </div>
+                                <div zui-data-carousel-prev>
+                                    <span class="zui-font36 zui-fontw600">《</span>
+                                </div>
+                                <ul zui-data-carousel-navigation></ul>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <h3>HTML部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-carousel-dome zui-carousel-dome1&quot; zui-data-carousel&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-content&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li style=&quot;background-image: url(&#39;images/01.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li style=&quot;background-image: url(&#39;images/02.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li style=&quot;background-image: url(&#39;images/03.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                        <span class="n"></span>&lt;/ul&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-next&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;span class=&quot;zui-font36 zui-fontw600&quot;&gt;》&lt;/span&gt;<br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-prev&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;span class=&quot;zui-font36 zui-fontw600&quot;&gt;《&lt;/span&gt;<br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-navigation&gt;&lt;/ul&gt;<br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                            <h3>JS部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                        $(&#39;.zui-carousel-dome1&#39;).slidizle();
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>水平左右切换使用说明</h4>
+                            <p>通过添加class类，<strong>zui-carousel-animated</strong>方法设置水平滑动的动画。</p>
+                            <p>也可以通过。zui-carousel-animated-up-down这个class类设置上下滚动</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-carousel-dome zui-carousel-dome2 zui-carousel-animated" zui-data-carousel>
+                                <ul zui-data-carousel-content>
+                                    <li style="background-image: url('images/01.jpg')"></li>
+                                    <li style="background-image: url('images/02.jpg')"></li>
+                                    <li style="background-image: url('images/03.jpg')"></li>
+                                </ul>
+
+                                <div zui-data-carousel-next>
+                                    <span class="zui-font36 zui-fontw600">》</span>
+                                </div>
+                                <div zui-data-carousel-prev>
+                                    <span class="zui-font36 zui-fontw600">《</span>
+                                </div>
+                                <ul zui-data-carousel-navigation></ul>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <h3>HTML部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-carousel-dome zui-carousel-dome1 zui-carousel-animated&quot; zui-data-carousel&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-content&gt;<br>
+                                        <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/ul&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-next&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-prev&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-navigation&gt;&lt;/ul&gt;<br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                            <h3>JS部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                        $(&#39;.zui-carousel-dome1&#39;).slidizle();
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>循环自动播放使用说明</h4>
+                            <p>通过调用不同的参数实现不同的效果</p>
+                        </div>
+
+                        <table class="zui-table">
+                            <colgroup>
+                            <col width="200">
+                            <col width="200">
+                            <col width="200">
+                            <col></colgroup>
+                            <thead>
+                            <tr>
+                                <th>名称</th>
+                                <th>类型</th>
+                                <th>默认值</th>
+                                <th>说明</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>timeout</td>
+                                    <td>整数</td>
+                                    <td>null</td>
+                                    <td>幻灯片播放间隔</td>
+                                </tr>
+                                <tr>
+                                    <td>pauseOnHover</td>
+                                    <td>布尔值</td>
+                                    <td>false</td>
+                                    <td>鼠标悬停暂停播放</td>
+                                </tr>
+                                <tr>
+                                    <td>nextOnClick</td>
+                                    <td>布尔值</td>
+                                    <td>false</td>
+                                    <td>鼠标点击暂停播放</td>
+                                </tr>
+                                <tr>
+                                    <td>loop</td>
+                                    <td>布尔值</td>
+                                    <td>false</td>
+                                    <td>循环播放</td>
+                                </tr>
+                                <tr>
+                                    <td>autoPlay</td>
+                                    <td>布尔值</td>
+                                    <td>false</td>
+                                    <td>自动播放</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="bs-example" id="">
+                            <div class="zui-carousel-dome zui-carousel-dome3 zui-carousel-animated" zui-data-carousel>
+                                <ul zui-data-carousel-content>
+                                    <li style="background-image: url('images/01.jpg')"></li>
+                                    <li style="background-image: url('images/02.jpg')"></li>
+                                    <li style="background-image: url('images/03.jpg')"></li>
+                                </ul>
+
+                                <div zui-data-carousel-next>
+                                    <span class="zui-font36 zui-fontw600">》</span>
+                                </div>
+                                <div zui-data-carousel-prev>
+                                    <span class="zui-font36 zui-fontw600">《</span>
+                                </div>
+                                <ul zui-data-carousel-navigation></ul>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <h3>HTML部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-carousel-dome zui-carousel-dome1 zui-carousel-animated&quot; zui-data-carousel&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-content&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/ul&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-next&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-prev&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-navigation&gt;&lt;/ul&gt;<br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                            <h3>JS部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                        $(&#39;.zui-carousel-dome3&#39;).slidizle({<br>
+                                            loop: true,<br>
+                                            autoPlay: true,<br>
+                                            timeout: 3000<br>
+                                        });
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>缩略图播放使用说明</h4>
+                            <p>通过<strong>&lt;ul zui-data-carousel-navigation&gt;&lt;/ul&gt;</strong>标签里面添加相关的图片，进行图片缩略图切换的定义，也可以自行定义不同的切换图标</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-carousel-dome zui-carousel-dome4 zui-carousel-animated" zui-data-carousel>
+                                <ul zui-data-carousel-content>
+                                    <li style="background-image: url('images/01.jpg')"></li>
+                                    <li style="background-image: url('images/02.jpg')"></li>
+                                    <li style="background-image: url('images/03.jpg')"></li>
+                                </ul>
+
+                                <div zui-data-carousel-next>
+                                    <span class="zui-font36 zui-fontw600">》</span>
+                                </div>
+                                <div zui-data-carousel-prev>
+                                    <span class="zui-font36 zui-fontw600">《</span>
+                                </div>
+                                <ul zui-data-carousel-navigation>
+                                    <li class="slider-navigation-item" style="background-image:url('images/01.jpg')"></li>
+                                    <li class="slider-navigation-item" style="background-image:url('images/02.jpg')"></li>
+                                    <li class="slider-navigation-item" style="background-image:url('images/03.jpg')"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <h3>HTML部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-carousel-dome zui-carousel-dome1 zui-carousel-animated&quot; zui-data-carousel&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-content&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/ul&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-next&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-prev&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-navigation&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;slider-navigation-item&quot; style=&quot;background-image:url(&#39;images/01.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;slider-navigation-item&quot; style=&quot;background-image:url(&#39;images/02.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;slider-navigation-item&quot; style=&quot;background-image:url(&#39;images/03.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                        <span class="n"></span>&lt;/ul&gt   <br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                            <h3>JS部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                        $(&#39;.zui-carousel-dome3&#39;).slidizle({<br>
+                                            loop: true,<br>
+                                            autoPlay: true,<br>
+                                            timeout: 3000<br>
+                                        });
+                                </code>
+                            </pre>
+                        </figure>
+                        <div class="bs-callout">
+                            <h4>进度条播放使用说明</h4>
+                            <p>通过<strong>&lt;div class=&quot;zui-slider-progressbar&quot;&gt;&lt;/div&gt;</strong>标签里面添加class和相关的js代码既可以显示一条进度条。</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-carousel-dome zui-carousel-dome5 zui-carousel-animated" zui-data-carousel>
+                                <ul zui-data-carousel-content>
+                                    <li style="background-image: url('images/01.jpg')"></li>
+                                    <li style="background-image: url('images/02.jpg')"></li>
+                                    <li style="background-image: url('images/03.jpg')"></li>
+                                </ul>
+
+                                <div zui-data-carousel-next>
+                                    <span class="zui-font36 zui-fontw600">》</span>
+                                </div>
+                                <div zui-data-carousel-prev>
+                                    <span class="zui-font36 zui-fontw600">《</span>
+                                </div>
+                                <div class="zui-slider-progressbar"></div>
+                                <ul zui-data-carousel-navigation>
+                                    <li class="slider-navigation-item" style="background-image:url('images/01.jpg')"></li>
+                                    <li class="slider-navigation-item" style="background-image:url('images/02.jpg')"></li>
+                                    <li class="slider-navigation-item" style="background-image:url('images/03.jpg')"></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <h3>HTML部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-carousel-dome zui-carousel-dome1 zui-carousel-animated&quot; zui-data-carousel&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-content&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/ul&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-next&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;div zui-data-carousel-prev&gt;<br>
+                                            <span class="n"></span><span class="n"></span><span>...</span><br>
+                                        <span class="n"></span>&lt;/div&gt;<br>
+                                        <span class="n"></span>&lt;ul zui-data-carousel-navigation&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;slider-navigation-item&quot; style=&quot;background-image:url(&#39;images/01.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;slider-navigation-item&quot; style=&quot;background-image:url(&#39;images/02.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;slider-navigation-item&quot; style=&quot;background-image:url(&#39;images/03.jpg&#39;)&quot;&gt;&lt;/li&gt;<br>
+                                        <span class="n"></span>&lt;/ul&gt   <br>
+                                    &lt;/div&gt;<br>
+                                </code>
+                            </pre>
+                        </figure>
+                        <figure class="highlight">
+                            <h3>JS部分</h3>
+                            <pre>
+                                <code class="language-html" >
+                                        var $dowebok = $(&#39;.zui-carousel-dome5&#39;),<br>
+                                            <span class="n"></span> $progressbar = $(&#39;.zui-slider-progressbar&#39;),<br>
+                                            <span class="n"></span> api = $dowebok.data(&#39;zui-carousel-api&#39;);<br>
+                                            <span class="n"></span> $dowebok.slidizle({<br>
+                                                <span class="n"></span> <span class="n"></span> loop: true,<br>
+                                                <span class="n"></span> <span class="n"></span> autoPlay: true,<br>
+                                                <span class="n"></span> <span class="n"></span> timeout: 5000<br>
+                                            <span class="n"></span> });<br>
+                                        $dowebok.on(&#39;zui-carousel.change&#39;, function(e, api) {<br>
+                                            <span class="n"></span> $progressbar.stop().css(&#39;width&#39;, 0);<br>
+                                        });<br>
+                                        $dowebok.on(&#39;zui-carousel.pause&#39;, function(e, api) {<br>
+                                            <span class="n"></span> $progressbar.stop();<br>
+                                        });<br>
+                                        $dowebok.on(&#39;zui-carousel.play zui-carousel.resume zui-carousel.change&#39;, function(e, api) {<br>
+                                            <span class="n"></span> if (api.isHover()) return;<br>
+                                            <span class="n"></span> $progressbar.animate({<br>
+                                                <span class="n"></span> <span class="n"></span> width: &#39;100%&#39;<br>
+                                            <span class="n"></span> }, api.getRemainingTimeout());<br>
+                                        });<br>
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="popup">
+                            <h2>弹窗组件</h2>
+                        </div>
+                        <hr>
+                        <p class="txt-example">依赖于jquery.js（1.8以上版本） 和 layer.js插件，详细文档请移步至  <a class="zui-label zui-label-main" href="http://layer.layui.com/" target="_black">官网</a> <strong>不能去挪动layer里面的文件结构，因为它们是不可拆散的组合</strong> </p>
+                        <div class="bs-callout">
+                            <h4>弹窗组件用法说明</h4>
+                            <p>1</p>
+                        </div>
+                        <div class="bs-example" id="">
+                            <div class="zui-main-title">
+                                <button class="zui-btn zui-btn-success" id="zui-popup-dome1">小小提示层</button>
+                                <button class="zui-btn zui-btn-success" id="zui-popup-dome2">图标提示层</button>
+                                <button class="zui-btn zui-btn-success" id="zui-popup-dome3">询问弹窗</button>
+                                <button class="zui-btn zui-btn-success" id="zui-popup-dome4">弹窗页面层</button>
+                                <button class="zui-btn zui-btn-success" id="zui-popup-dome5">弹窗Ifname页面</button>
+                                <button class="zui-btn zui-btn-success" id="zui-popup-dome6">弹窗个tips提示</button>
+                                <button class="zui-btn zui-btn-success" id="zui-popup-dome7">弹窗输入框</button>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+
+                                </code>
+                            </pre>
+                        </figure>
+                        <table class="zui-table">
+                            <colgroup>
+                                <col width="200">
+                                <col width="200">
+                                <col width="200">
+                                <col>
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>名称</th>
+                                    <th>类型</th>
+                                    <th>默认值</th>
+                                    <th>说明</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>type（基本层类型）</td>
+                                    <td>Number</td>
+                                    <td>0</td>
+                                    <td>可传入的值有：0（信息框，默认）1（页面层）2（iframe层）3（加载层）4（tips层）。 若你采用layer.open({type: 1})方式调用，则type为必填项（信息框除外）</td>
+                                </tr>
+                                <tr>
+                                    <td>title（标题）</td>
+                                    <td>String/Array/Boolean</td>
+                                    <td>信息</td>
+                                    <td>若你传入的是普通的字符串，如title :'我是标题'，那么只会改变标题文本；若你还需要自定义标题区域样式，那么你可以title: ['文本', 'font-size:18px;']，数组第二项可以写任意css样式；如果你不想显示标题栏，你可以title: false</td>
+                                </tr>
+                                <tr>
+                                    <td>content（内容）</td>
+                                    <td>String/DOM/Array</td>
+                                    <td>null</td>
+                                    <td>content可传入的值是灵活多变的，不仅可以传入普通的html内容，还可以指定DOM，更可以随着type的不同而不同。</td>
+                                </tr>
+                                <tr>
+                                    <td>skin（样式类名）</td>
+                                    <td>String</td>
+                                    <td>null</td>
+                                    <td>skin不仅允许你传入layer内置的样式class名，还可以传入您自定义的class名。这是一个很好的切入点，意味着你可以借助skin轻松完成不同的风格定制。目前修改并内置了zui-popup-skin-default（主体色）</td>
+                                </tr>
+                                <tr>
+                                    <td>area（宽高）</td>
+                                    <td>String/Array</td>
+                                    <td>auto</td>
+                                    <td>在默认状态下，layer是宽高都自适应的，但当你只想定义宽度时，你可以area: '500px'，高度仍然是自适应的。当你宽高都要定义时，你可以area: ['500px', '300px']</td>
+                                </tr>
+                                <tr>
+                                    <td>icon（图标）</td>
+                                    <td>Number</td>
+                                    <td>-1（信息框）/0（加载层）</td>
+                                    <td>信息框默认不显示图标。当你想显示图标时，默认皮肤可以传入0-6如果是加载层，可以传入0-2。如：layer.alert('酷毙了', {icon: 1});</td>
+                                </tr>
+                                <tr>
+                                    <td>btn（按钮）</td>
+                                    <td>String/Array</td>
+                                    <td>确认</td>
+                                    <td>信息框模式时，btn默认是一个确认按钮，其它层类型则默认不显示，加载层和tips层则无效。当您只想自定义一个按钮时，你可以btn: '我知道了'，当你要定义两个按钮时，你可以btn: ['yes', 'no']。当然，你也可以定义更多按钮，比如：btn: ['按钮1', '按钮2', '按钮3', …]，按钮1和按钮2的回调分别是yes和cancel，而从按钮3开始，则回调为btn3: function(){}，以此类推。如：</td>
+                                </tr>
+                                <tr>
+                                    <td>time （自动关闭所需毫秒）</td>
+                                    <td>Number</td>
+                                    <td>0</td>
+                                    <td>默认不会自动关闭。当你想自动关闭时，可以time: 5000，即代表5秒后自动关闭，注意单位是毫秒（1秒=1000毫秒）</td>
+                                </tr>
+                                <tr>
+                                    <td>anim（动画）</td>
+                                    <td>Number</td>
+                                    <td>0</td>
+                                    <td>动画全部采用CSS3。这意味着除了ie6-9，其它所有浏览器都是支持的。目前anim可支持的动画类型有0-6</td>
+                                </tr>
+                                <tr>
+                                    <td>offset（坐标）</td>
+                                    <td>String/Array</td>
+                                    <td>垂直水平居中</td>
+                                    <td>offset默认情况下不用设置。但如果你不想垂直水平居中，你还可以进行以下赋值：
+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="zui-text-center" colspan="4">
+                                        <a class="zui-label zui-label-main" href="http://www.layui.com/doc/modules/layer.html" target="_black">去看更多</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="zui-box">
+                        <div class="zui-main-title" id="datetime">
+                            <h2>日历组件</h2>
+                        </div>
+                        <hr>
+                        <p class="txt-example">
+                            依赖于jquery.js（1.8以上版本） 和 layer.js插件，详细文档请移步至  <a class="zui-label zui-label-main" href="http://laydate.layui.com/" target="_black">官网</a> <strong>不能去挪动laydate里面的文件结构，因为它们是不可拆散的组合</strong>
+                        </p>
+                        <div class="bs-callout">
+                            <h4>日历组件用法说明</h4>
+                            <p>通过js的方法进行外部调用</p>
+                        </div>
+                        <div class="bs-example">
+                            <div class="zui-form">
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">自定义时间</label>
+                                    <div class="zui-input-inline">
+                                        <input id="zui-time-dome1" type="text" name="tiem" verify="time" placeholder="自定义日期格式" class="zui-input">
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">开启节日</label>
+                                    <div class="zui-input-inline">
+                                        <input id="zui-time-dome2" class="zui-input" placeholder="开启节日" >
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <label class="zui-form-label">明天到今天</label>
+                                    <div class="zui-input-inline">
+                                        <input id="zui-time-dome3" class="zui-input" placeholder="明天到今天" >
+                                    </div>
+                                </div>
+                                <div class="zui-form-item">
+                                    <div class="zui-inline">
+                                        <label class="zui-form-label">开始时间</label>
+                                        <div class="zui-input-inline">
+                                            <input id="zui-date-min" placeholder="这里是开始时间" class="zui-input"></div>
+                                    </div>
+                                    <div class="zui-inline">
+                                        <label class="zui-form-label">结束时间</label>
+                                        <div class="zui-input-inline">
+                                            <input id="zui-date-max" placeholder="这里是结束时间" class="zui-input"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    <h3>日历组件参数</h3>
+                                    elem: '#id', //需显示日期的元素选择器<br>
+                                    event: 'click', //触发事件<br>
+                                    format: 'YYYY-MM-DD hh:mm:ss', //日期格式<br>
+                                    istime: false, //是否开启时间选择<br>
+                                    isclear: true, //是否显示清空<br>
+                                    istoday: true, //是否显示今天<br>
+                                    issure: true, 是否显示确认<br>
+                                    festival: true //是否显示节日<br>
+                                    min: '1900-01-01 00:00:00', //最小日期<br>
+                                    max: '2099-12-31 23:59:59', //最大日期<br>
+                                    start: '2014-6-15 23:00:00',  //开始日期<br>
+                                    fixed: false, //是否固定在可视区域<br>
+                                    zIndex: 99999999, //css z-index<br>
+                                    choose: function(dates){ //选择好日期的回调
+                                </code>
+                            </pre>
+                        </figure>
+                    </div>
+                </div>
+                <div class="zui-col-3">
+                    <div id="menu-nav">
+                        <ul>
+                            <li><a href="#page">翻页组件</a></li>
+                            <li><a href="#nav">导航组件</a></li>
+                            <li><a href="#tab">tab切换</a></li>
+                            <li><a href="#carousel">图片轮播</a></li>
+                            <li><a href="#popup">弹窗组件</a></li>
+                            <li><a href="#datetime">日历组件</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="zui-main">
+        <p class="zui-text-center">zui使用说明文档</p>
+    </div>
+</body>
+<script src="../../js/jquery-1.9.1.min.js"></script>
+<script src="../../js/zui.js"></script>
+<script src="../../js/plugin/layer/layer.js"></script>
+<script src="../../js/plugin/laydate/laydate.js"></script>
+
+<script>
+$(function() {
+    $('.zui-carousel-dome1').slidizle();
+    $('.zui-carousel-dome2').slidizle();
+    $('.zui-carousel-dome3').slidizle({
+        loop: true,
+        autoPlay: true,
+        timeout: 3000
+    });
+    $('.zui-carousel-dome4').slidizle({
+        loop: true,
+        autoPlay: true,
+        timeout: 3000
+    });
+
+    //滚动条
+    var $dowebok = $('.zui-carousel-dome5'),
+    $progressbar = $('.zui-slider-progressbar'),
+    api = $dowebok.data('zui-carousel-api');
+    $dowebok.slidizle({
+        loop: true,
+        autoPlay: true,
+        timeout: 5000
+    });
+
+    $dowebok.on('zui-carousel.change', function(e, api) {
+        $progressbar.stop().css('width', 0);
+    });
+
+    $dowebok.on('zui-carousel.pause', function(e, api) {
+        $progressbar.stop();
+    });
+
+    $dowebok.on('zui-carousel.play zui-carousel.resume zui-carousel.change', function(e, api) {
+        if (api.isHover()) return;
+        $progressbar.animate({
+            width: '100%'
+        }, api.getRemainingTimeout());
+    });
+
+    // 弹窗部分
+    $('#zui-popup-dome1').on('click', function(){
+        layer.msg('哎呦，这是个提示哟！');
+    });
+    $('#zui-popup-dome2').on('click', function(){
+        layer.msg('有个图标的提示喔！', {icon: 1});
+    });
+    $('#zui-popup-dome3').on('click', function(){
+        //询问框
+        layer.confirm('您是如何看待前端开发？', {
+            btn: ['重要','奇葩'] //按钮
+        }, function(){
+            layer.msg('的确很重要', {icon: 1});
+        }, function(){
+            layer.msg('也可以这样', {
+                time: 20000, //20s后自动关闭
+                btn: ['明白了', '知道了']
+            });
+        });
+    });
+    $('#zui-popup-dome4').on('click', function(){
+        //询问框
+        layer.open({
+            type: 1,
+            title:'这个标题也可以改哟',
+            skin: 'zui-popup-skin-default', //加上边框
+            area: ['420px', '240px'], //宽高
+            content: '<p style="padding:10px">通过设置参数 <strong>skin</strong> 的值为 <strong>zui-popup-skin-default</strong> 的时候可以设置弹窗的皮肤样式为网站主色</p><p style="padding:10px">你也可以自定义一个class来设置弹窗的皮肤</p>'
+        });
+    });
+    $('#zui-popup-dome5').on('click', function(){
+      layer.open({
+        type: 2,
+        skin: 'zui-popup-skin-default',
+        title: 'iframe父子操作',
+        maxmin: true,
+        scrollbar: false, //浏览器滚动条锁定
+        shadeClose: true, //点击遮罩关闭层
+        area : ['800px' , '520px'],
+        content: 'dome.html'
+        });
+    });
+    $('#zui-popup-dome6').on('click', function(){
+        layer.tips('Hi，我是tips, 1表示上，2表示右，3表示下，4表示左', '#zui-popup-dome6', {
+            tips: [1, '#3595CC'],
+            time: 4000,
+        });
+    });
+    $('#zui-popup-dome7').on('click', function(){
+        layer.prompt({title: '输入任何口令，并确认', formType: 1}, function(pass, index){
+            layer.close(index);
+            layer.prompt({title: '随便写点啥，并确认', formType: 2}, function(text, index){
+            layer.close(index);
+            layer.msg('演示完毕！您的口令：'+ pass +'您最后写下了：'+text);
+            });
+        });
+    });
+});
+</script>
+<script>
+    laydate({
+        elem: '#zui-time-dome1',
+        format: 'YYYY-MM-DD hh:mm:ss',
+        festival: true, //显示节日
+        istime: true, //是否开启时间选择
+        choose: function(datas){ //选择日期完毕的回调
+            layer.msg('你选的是：'+datas);
+        }
+    });
+    laydate({
+        elem: '#zui-time-dome2',
+        format: 'YYYY-MM-DD',
+        festival: true, //显示节日
+        choose: function(datas){ //选择日期完毕的回调
+            layer.msg('你选的是：'+datas);
+        }
+    });
+    laydate({
+        elem: '#zui-time-dome3',
+        min: laydate.now(-1), //-1代表昨天，-2代表前天，以此类推
+        max: laydate.now(+1), //+1代表明天，+2代表后天，以此类推
+        choose: function(datas){ //选择日期完毕的回调
+            layer.msg('你选的是：'+datas);
+        }
+    });
+</script>
+<script>
+    var start = {
+        elem: '#zui-date-min',
+        format: 'YYYY/MM/DD hh:mm:ss',
+        max: laydate.now(),
+        min: '1900-01-01 00:00:00',  //最小日期
+        istoday: true,
+        istime: true, //是否开启时间选择
+        choose: function(datas){     //选择好日期的回调
+          end.min = datas;     //开始日选好后，重置结束日的最小日期
+          end.start = datas    //将结束日的初始值设定为开始日
+          layer.msg('开始时间：'+datas);
+        }
+    };
+    var end = {
+        elem: '#zui-date-max',
+        format: 'YYYY/MM/DD hh:mm:ss',
+        max: laydate.now(),             //最大日期
+        min: '1900-01-01 00:00:00',   //最小日期
+        istoday: true,                //是否显示今天
+        istime: true, //是否开启时间选择
+        choose: function(datas){
+          start.max = datas;    //结束日选好后，重置开始日的最大日期
+          layer.msg('结束时间：'+datas);
+        }
+    };
+    laydate(start);
+    laydate(end);
+</script>
+</html>

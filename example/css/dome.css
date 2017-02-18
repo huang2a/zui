@@ -43,7 +43,7 @@
     border-left: #337ab7 solid 3px;
     color: #337ab7;
 }
-.bs-example .txt-example{
+.txt-example{
     border: #ddd solid 1px;
     padding: 10px;
     border-radius: 3px;
@@ -101,9 +101,8 @@
 }
 #menu-nav{
     position: fixed;
-    top: 0;
+    top: 48px;
     width: 280px;
-    border-left: #ddd solid 1px;
 }
 #menu-nav ul{
     display: block;
@@ -126,4 +125,10 @@
     display: block;
     color: #2e2e2e;
     text-decoration: inherit;
+}
+
+.zui-carousel-dome{
+    width: 800px;
+    height: 400px;
+    margin: 0 auto;
 }
