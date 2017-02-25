@@ -7,6 +7,7 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <link href="../../Css/PcSite/zui.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="css/style-admin.css">
 </head>
 <body>
@@ -53,10 +54,10 @@
             <div class="zui-tree">
                 <ul class="zui-tree-box">
                     <li class="zui-tree-item">
-                        <a href="##">控制台</a>
+                        <a class="zui-active" href="##">控制台</a>
                     </li>
                     <li class="zui-tree-item ">
-                        <a href="##" class="zui-inactive-off zui-active">系统设置</a>
+                        <a href="##" class="zui-inactive-off">系统设置</a>
                         <ul class="zui-nav-two">
                             <li>
                                 <a href="##">网站参数设置</a>
@@ -125,8 +126,170 @@
                     </li>
                 </ul>
             </div>
+            <p class="zui-text-center zui-font12" style="color: #555;">版权所属：卓商网络</p>
         </div>
-        <div class="zui-admin-content zui-pull-left">
+        <div class="zui-admin-content">
+            <div class="zui-admin-titlt">
+                <h2 class="zui-color-main">网站参数设置</h2>
+            </div>
+            <div class="zui-admin-box">
+                <table class="zui-table">
+                    <colgroup>
+                    <col width="200">
+                    <col width="200">
+                    <col width="200">
+                    <col></colgroup>
+                <thead>
+                    <tr>
+                        <th>订单号</th>
+                        <th>收件人</th>
+                        <th>下单时间</th>
+                        <th>订单留言</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HS273187131</td>
+                        <td>张三</td>
+                        <td>2017-2-11 14:37:51</td>
+                        <td>麻烦发顺丰快递，谢谢</td>
+                    </tr>
+                    <tr>
+                        <td>HS273187131</td>
+                        <td>李四</td>
+                        <td>2017-2-11 14:38:40</td>
+                        <td>请在工作日进行配送，政府部门周末才收件的。</td>
+                    </tr>
+                    <tr>
+                        <td>HW32132145</td>
+                        <td>Helen</td>
+                        <td>2017-2-11 14:39:59</td>
+                        <td>Life is either a daring adventure or nothing.</td>
+                    </tr>
+                    <tr>
+                        <td>HS29321891</td>
+                        <td>王五</td>
+                        <td>2017-2-11 14:41:08</td>
+                        <td>请保密发送</td>
+                    </tr>
+                    <tr>
+                        <td>HS29321891</td>
+                        <td>赵六</td>
+                        <td>2017-2-11 14:41:44</td>
+                        <td>东西还不错，第二次买，记得保密发送。</td>
+                    </tr>
+                </tbody>
+                </table>
+            </div>
+            <div class="zui-admin-titlt">
+                <h2 class="zui-color-main">网站参数设置</h2>
+            </div>
+            <div class="zui-admin-box">
+                <div class="zui-forms">
+                    <div class="zui-form-item">
+                        <label class="zui-form-label">单行输入框</label>
+                        <div class="zui-input-block">
+                            <input type="text" name="title" autocomplete="off" placeholder="请输入标题" class="zui-input"></div>
+                    </div>
+                    <div class="zui-form-item">
+                        <label class="zui-form-label">验证手机</label>
+                        <div class="zui-input-inline">
+                            <input type="tel" name="phone" verify="phone" autocomplete="off" class="zui-input"></div>
+                    </div>
+                    <div class="zui-form-item">
+                        <div class="zui-inline">
+                            <label class="zui-form-label">横向排列</label>
+                            <div class="zui-input-inline">
+                                <input type="number" name="number" autocomplete="off" placeholder="输入数量" class="zui-input"></div>
+                        </div>
+                        <div class="zui-inline">
+                            <label class="zui-form-label">横向排列</label>
+                            <div class="zui-input-inline">
+                                <input type="text" name="date" id="date" placeholder="输入时间" autocomplete="off" class="zui-input"></div>
+                        </div>
+                    </div>
+                    <div class="zui-form-item">
+                        <label class="zui-form-label">输入提示</label>
+                        <div class="zui-input-inline">
+                            <input type="password" name="password" verify="pass" placeholder="请输入密码" autocomplete="off"
+                class="zui-input"></div>
+                        <div class="zui-form-mid zui-word-aux">请填写6到12位密码</div>
+                        <div class="zui-form-mid zui-word-danger">错误时候的提示！</div>
+                    </div>
+                    <div class="zui-form-item">
+                        <div class="zui-inline">
+                            <label class="zui-form-label">范围</label>
+                            <div class="zui-input-inline" style="width: 100px;">
+                                <input type="text" name="price-min" placeholder="￥" autocomplete="off" class="zui-input"></div>
+                            <div class="zui-form-mid">-</div>
+                            <div class="zui-input-inline" style="width: 100px;">
+                                <input type="text" name="price-max" placeholder="￥" autocomplete="off" class="zui-input"></div>
+                        </div>
+                    </div>
+                    <div class="zui-form-item">
+                        <label class="zui-form-label">下拉选择</label>
+                        <div class="zui-input-block">
+                            <select class="zui-select" name="interest">
+                                <option value="0">写作</option>
+                                <option value="1" selected="">阅读</option>
+                                <option value="2">游戏</option>
+                                <option value="3">音乐</option>
+                                <option value="4">旅行</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="zui-form-item">
+                        <label class="zui-form-label">单选框</label>
+                        <div class="zui-input-block">
+                            <label class="zui-radio">
+                                <input name="radio" type="radio">
+                                <span></span> <em>男</em>
+                            </label>
+                            <label class="zui-radio">
+                                <input name="radio" type="radio">
+                                <span></span> <em>女</em>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="zui-form-item">
+                        <label class="zui-form-label">复选框</label>
+                        <div class="zui-input-block">
+                            <label class="zui-radio">
+                                <input name="check" type="checkbox">
+                                <span></span>
+                                <em>足球</em>
+                            </label>
+                            <label class="zui-radio">
+                                <input name="check" type="checkbox">
+                                <span></span>
+                                <em>篮球</em>
+                            </label>
+                            <label class="zui-radio">
+                                <input name="check" type="checkbox">
+                                <span></span>
+                                <em>羽毛球</em>
+                            </label>
+                            <label class="zui-radio">
+                                <input name="check" type="checkbox">
+                                <span></span>
+                                <em>乒乓球</em>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="zui-form-item">
+                        <label class="zui-form-label">文本域</label>
+                        <div class="zui-input-block">
+                            <textarea placeholder="请输入内容" class="zui-textarea"></textarea>
+                        </div>
+                    </div>
+                    <div class="zui-form-item">
+                        <div class="zui-input-block">
+                            <button class="zui-btn">立即提交</button>
+                            <button class="zui-btn zui-btn-primary">重置</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="">
                 <p class="zui-text-center">zui使用说明文档</p>
             </div>
@@ -135,4 +298,12 @@
 </body>
 <script src="../../Js/PcSite/jquery-1.9.1.min.js"></script>
 <script src="../../Js/PcSite/zui.js"></script>
+<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type='text/javascript'>
+    (function($){
+        $(document).ready(function(){
+            $(".zui-admin-menu").mCustomScrollbar();
+        });
+    })(jQuery);
+</script>
 </html>
