@@ -6,7 +6,7 @@
 <title>ZUI方案演示</title>
 <meta name="description" content="">
 <meta name="keywords" content="">
-<link href="../../dist/css/zui.css" rel="stylesheet">
+<link href="../../Css/PcSite/zui.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/dome.css">
 </head>
 <body style="background-color:#f0efef; padding-top:50px;">
@@ -56,7 +56,7 @@
                             <h4>编译工具说明</h4>
                             <p><a class="zui-label zui-label-success" href="http://koala-app.com/index-zh.html" target="_black">下载编译器</a></p>
                             <p>LESS文件采用考拉编译器进行less的编译,配置参数如图：</p>
-                            <h5>1、路径配置：dist\css</h5>
+                            <h5>1、路径配置：Css\PcSite\zui.css</h5>
                             <h5>2、编译参数：Autoprefix 设置css3属性自动添加浏览器前缀。</h5>
                             <h5>3、输出方式：compress 设置压缩CSS文件</h5>
                         </div>
@@ -75,24 +75,44 @@
                         <figure class="highlight">
                             <pre>
                             <code class="language-html" >
-                            ├── dist                    项目编译生成文件<br>
-                            │   ├── css                 编译之后css文件<br>
-                            │   ├── js                  编译之后js文件<br>
-                            │   ├── images              ZUI用到的图片目录<br>
-                            ├── example                 zui框架演示dome<br>
-                            │   ├── ccs                 演示页面的css<br>
-                            │   ├── hello-zui           演示项目<br>
-                            ├── font                    字体图标文件<br>
-                            ├── js                      zui的框架js<br>
-                            ├── less                    存放less文件<br>
-                            ├── pagetemplate            页面模板文件<br>
-                            │   ├── login               会员登录<br>
-                            │   ├── register            注册模块<br>
-                            │   ├── member              会员中心<br>
-                            │   ├── help                帮助中心<br>
-                            │   ├── feedback            意见反馈<br>
-                            ├── null                    **模块<br>
-                            └──
+                                ├── Admin<span class="n"></span><span class="n"></span><span class="n"></span>……<br>
+                                ├── Css <span class="n"></span><span class="n"></span><span class="n"></span> 项目css文件存放<br>
+                                │   ├── Admin<span class="n"></span><span class="n"></span> ……<br>
+                                │   ├── Common<span class="n"></span><span class="n"></span>……<br>
+                                │   ├── PcSite<span class="n"></span><span class="n"></span>PC网站css<br>
+                                │   ├── WapSite<span class="n"></span><span class="n"></span>手机网站css<br>
+                                ├── example <span class="n"></span>  <span class="n"></span>zui框架演示dome<br>
+                                │   ├── ccs  <span class="n"></span> <span class="n"></span> 演示页面的css<br>
+                                │   ├── hello-zui <span class="n"></span>演示项目<br>
+                                ├── Font <span class="n"></span><span class="n"></span><span class="n"></span>字体图标文件<br>
+                                │   ├── Admin <span class="n"></span><span class="n"></span>……<br>
+                                │   ├── Common<span class="n"></span><span class="n"></span>……<br>
+                                │   ├── PcSite<span class="n"></span><span class="n"></span>PC网站font<br>
+                                │   ├── WapSite<span class="n"></span><span class="n"></span>手机网站font<br>
+                                ├── Images<span class="n"></span><span class="n"></span><span class="n"></span>静态图片文件<br>
+                                │   ├── Admin <span class="n"></span><span class="n"></span>……<br>
+                                │   ├── Common<span class="n"></span><span class="n"></span>……<br>
+                                │   ├── PcSite<span class="n"></span><span class="n"></span>PC网站静态Images<br>
+                                │   ├── WapSite<span class="n"></span><span class="n"></span>手机网站静态Images<br>
+                                ├── js<span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>项目JS文件<br>
+                                │   ├── Admin <span class="n"></span><span class="n"></span>……<br>
+                                │   ├── Common<span class="n"></span><span class="n"></span>……<br>
+                                │   ├── PcSite<span class="n"></span><span class="n"></span>PC网站静态JS<br>
+                                │   ├── WapSite<span class="n"></span><span class="n"></span>手机网站静态JS<br>
+                                ├── less <span class="n"></span><span class="n"></span><span class="n"></span>存放less文件<br>
+                                ├── PcSite<span class="n"></span><span class="n"></span><span class="n"></span>项目PC端HTML文件<br>
+                                │   ├── login <span class="n"></span><span class="n"></span>会员登录<br>
+                                │   ├── register   <span class="n"></span>注册模块<br>
+                                │   ├── member<span class="n"></span><span class="n"></span>会员中心<br>
+                                │   ├── help <span class="n"></span><span class="n"></span>帮助中心<br>
+                                │   ├── feedback <span class="n"></span>意见反馈<br>
+                                ├── UploadFile  <span class="n"></span>项目更新文件<br>
+                                │   ├── Admin <span class="n"></span><span class="n"></span>……<br>
+                                │   ├── Common<span class="n"></span><span class="n"></span>……<br>
+                                │   ├── PcSite<span class="n"></span><span class="n"></span>PC网站更新文件<br>
+                                │   ├── WapSite<span class="n"></span><span class="n"></span>手机网站更新文件<br>
+                                ├── WapSite <span class="n"></span><span class="n"></span>项目Wap端HTML文件<br>
+                                └──
                             </code>
                         </pre>
                         </figure>

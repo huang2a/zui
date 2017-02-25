@@ -1,0 +1,69 @@
+body{
+    padding-top: 49px;
+}
+html,body,.zui-admin-main{
+    height: 100%;
+}
+.zui-admin-content{
+    margin-left: 251px;
+    min-height: 100%;
+}
+.zui-logo-box{
+    display: inline-block;
+    float: left;
+    width: 230px;
+    height: 48px;
+    line-height: 48px;
+    margin-right: 10px;
+}
+.zui-logo-box a{
+    font-size: 18px;
+    color: #fff;
+}
+.zui-logo-box a:hover{
+    text-decoration: none;
+}
+.zui-logo-box a i{
+    font-size: 24px;
+}
+.zui-nav{
+    padding: 0 10px;
+}
+.zui-nav .zui-nav-box{
+    width: 100%;
+}
+.zui-admin-menu{
+    display: block;
+    height: 100%;
+    width: 250px;
+    background: #272d33;
+}
+.zui-admin-menu .zui-tree{
+    border: none;
+    background: none;
+}
+.zui-admin-menu .zui-tree .zui-tree-item {
+    width: 250px;
+    border: none;
+    background: transparent;
+}
+.zui-admin-menu .zui-tree .zui-tree-item>a{
+    color: #fff;
+    height: 44px;
+    line-height: 44px;
+}
+.zui-admin-menu .zui-tree .zui-tree-item .zui-active{
+    background: #0f1114;
+}
+.zui-admin-menu .zui-tree .zui-nav-two>li {
+    background: #21272c;
+    padding: 0;
+    border: none;
+}
+.zui-admin-menu .zui-tree .zui-nav-two>li>a{
+    color: #fff;
+    padding: 14px 10px;
+}
+.zui-admin-menu .zui-tree .zui-nav-two>li>a:hover,.zui-admin-menu .zui-tree .zui-nav-two>li>a.zui-active{
+    background-color: #1d2226;
+}
