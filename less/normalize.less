@@ -24,6 +24,7 @@ html {
 
 body {
   margin: 0;
+  background-color: @default-body-color;
 }
 
 //  HTML5 display definitions
@@ -90,6 +91,11 @@ template {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  &:hover{
+    color: @default-main-color;
+    text-decoration: underline;
+  }
 }
 
 
@@ -363,4 +369,7 @@ textarea {
 
 optgroup {
   font-weight: bold;
+}
+.zui-border-radius{
+  .border-radius();
 }

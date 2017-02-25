@@ -1,0 +1,156 @@
+.zui-member-box{
+    background: #fff;
+    margin-bottom: 20px;
+    border:solid 1px #ddd;
+}
+.zui-member-menu{
+    .zui-tree{
+        border-left: none;
+        border-top: none;
+        border-right: none;
+    }
+}
+.zui-userimg-box{
+    width: 250px;
+    padding: 20px;
+    background: #f8f8f8;
+    .user-img{
+        display:block;
+        width: 80px;
+        height: 80px;
+        overflow: hidden;
+        border:#ddd solid 1px;
+        margin-right: 10px;
+        .border-radius(80px);
+    }
+    .user-text{
+        font-size: 12px;
+        p{
+            margin-bottom: 0;
+        }
+        a{
+            color: @default-text-color;
+        }
+        .name{
+            color: @default-main-color;
+        }
+    }
+}
+.zui-user-label{
+    display: block;
+    width: 250px;
+    padding: 5px;
+    background: #f8f8f8;
+    font-size: 12px;
+    .user-tag{
+        color: @default-text-color;
+        display: inline-block;
+        padding: 2px;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+    .zui-active{
+        i{
+            color: @default-main-color;
+        }
+    }
+
+}
+.zui-help-title{
+    border-bottom: #ddd dashed 1px;
+    margin: 0;
+    padding: 10px;
+    color: @default-main-color;
+}
+.zui-member-main{
+    width: 928px;
+    min-height: 600px;
+    padding: 10px 20px 20px 20px;
+    border-left: #ddd solid 1px;
+    .zui-column-title{
+        margin-bottom: 10px;
+        border-bottom: #ddd solid 1px;
+        h4{
+            display: inline-block;
+            padding: 5px;
+            border-bottom: #fb5a02 solid 2px;
+            color: #fb5a02;
+            font-size: 16px;
+            margin: 0 0 -1px 0;
+        }
+    }
+    .zui-article-list{
+        li{
+            display: block;
+            width: 100%;
+            padding: 5px 0;
+            border-bottom: #ddd dashed 1px;
+            overflow: hidden;
+            a{
+                color: @default-text-color;
+                white-space:nowrap;
+                &:hover{
+                    color: @default-main-color;
+                }
+            }
+        }
+    }
+    .zui-article-info{
+        .zui-info-title{
+            text-align: center;
+        }
+        .zui-info-box{
+            width: 886px;
+            line-height: 150%;
+            font-size: 14px;
+            overflow: hidden;
+        }
+    }
+}
+
+// 友情链接部分
+.zui-friendlylink-box{
+    margin:10px;
+    width:1158px;
+    overflow: hidden;
+    ul{
+        width: 1200px;
+        display: inline-block;
+        .clearfix();
+    }
+    .zui-img-link li{
+        float: left;
+        margin-right: 14px;
+        margin-bottom: 10px;
+        border:#ddd solid 1px;
+        position: relative;
+        width: 220px;
+        height: 80px;
+        z-index: 99;
+        &:hover{
+            >.zui-friendlylink-title{
+                display: block;
+            }
+        }
+        img{
+            display: block;
+        }
+        .zui-friendlylink-title{
+            display: none;
+            position: absolute;
+            top: -1px;
+            left: -1px;
+            width: 221px;
+            height: 81px;
+            background-color: @default-main-color;
+            opacity: 0.8;
+            p{
+                line-height: 80px;
+                text-align: center;
+                margin: 0;
+                color: #fff;
+            }
+        }
+    }
+}

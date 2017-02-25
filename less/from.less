@@ -1,4 +1,4 @@
-.zui-form{
+.zui-forms{
     .zui-form-item {
         margin-bottom: 15px;
         .clearfix();
@@ -97,19 +97,29 @@
     input {
         display: none;
     }
+    .zui-radio{
+
+    }
+    .zui-checkbox{
+
+    }
     input + span {
         display: inline-block;
-        width: 20px;
-        height: 20px;
-        background: #ccc;
+        width: 15px;
+        height: 15px;
+        margin-top: 3px;
         cursor: pointer;
         float: left;
     }
     input[type="radio"] + span {
         border-radius: 50%;
+        background: #ccc;
+        //这里可以设置默认的图片作为单选框默认的图标
     }
     input[type="checkbox"] + span {
         border-radius: 10%;
+        background: #ccc;
+        //这里可以设置默认的图片作为复选框默认的图标
     }
     input[type="checkbox"]:checked + span {
         background: @default-main-color;

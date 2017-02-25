@@ -60,31 +60,47 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>字体使用说明</h4>
-                            <p>1</p>
+                            <p>通过zui-font*（例如：class=“zui-font14” 表示字体的大小是14px） 的形式进行，内置的字体大小分别是12px、14px、16px、18px、24px、36px。如需增加内置的字体大样式，可在font.less的文件中进行增加。</p>
+                            <p class="zui-color-main">备注：zui-font*的形式调用字体大小的时候的优先级将低于直接class定义的字体大小。</p>
                         </div>
                         <div class="bs-example">
                             <h3 class="title">字体大小使用</h3>
-                            <p class="zui-font36">36px</p>
-                            <p class="zui-font24">24px</p>
-                            <p class="zui-font18">18px</p>
-                            <p class="zui-font16">16px</p>
-                            <p class="zui-font14">14px</p>
-                            <p class="zui-font12">12px</p>
+                            <p class="zui-font36">36px class="zui-font36"</p>
+                            <p class="zui-font24">24px class="zui-font24"</p>
+                            <p class="zui-font18">18px class="zui-font18"</p>
+                            <p class="zui-font16">16px class="zui-font16"</p>
+                            <p class="zui-font14">14px class="zui-font14"</p>
+                            <p class="zui-font12">12px class="zui-font12"</p>
                             <h3 class="title">字体颜色使用</h3>
-                            <p class="zui-color-main">主体颜色</p>
-                            <p class="zui-color-main-assist">主体色的辅助色彩</p>
-                            <p class="zui-color-default">字体默认颜色</p>
+                            <p class="zui-color-main">主体颜色  class="zui-color-main"</p>
+                            <p class="zui-color-main-assist">主体色的辅助色彩  class="zui-color-main-assist"</p>
+                            <p class="zui-color-default">字体默认颜色  class="zui-color-default"</p>
                             <p class="zui-color-default-assist">
-                            字体默认颜色的辅助色</p>
+                            字体默认颜色的辅助色  class="zui-color-default-assist"</p>
                             <h3 class="title">字体对齐使用</h3>
-                            <p class="zui-text-left">字体的左对齐</p>
-                            <p class="zui-text-center">字体居中对齐</p>
-                            <p class="zui-text-right">字体的右对齐</p>
+                            <p class="zui-text-left">字体的左对齐  class="zui-text-left"</p>
+                            <p class="zui-text-center">字体居中对齐  class="zui-text-center"</p>
+                            <p class="zui-text-right">字体的右对齐  class="zui-text-right"</p>
                         </div>
                         <figure class="highlight">
                             <pre>
                                 <code class="language-html" >
-
+                                    &lt;h3 class=&quot;title&quot;&gt;字体大小使用&lt;/h3&gt;<br>
+                                    &lt;p class=&quot;zui-font36&quot;&gt;36px class=&quot;zui-font36&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-font24&quot;&gt;24px class=&quot;zui-font24&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-font18&quot;&gt;18px class=&quot;zui-font18&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-font16&quot;&gt;16px class=&quot;zui-font16&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-font14&quot;&gt;14px class=&quot;zui-font14&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-font12&quot;&gt;12px class=&quot;zui-font12&quot;&lt;/p&gt;<br>
+                                    &lt;h3 class=&quot;title&quot;&gt;字体颜色使用&lt;/h3&gt;<br>
+                                    &lt;p class=&quot;zui-color-main&quot;&gt;主体颜色  class=&quot;zui-color-main&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-color-main-assist&quot;&gt;主体色的辅助色彩  class=&quot;zui-color-main-assist&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-color-default&quot;&gt;字体默认颜色  class=&quot;zui-color-default&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-color-default-assist&quot;&gt;字体默认颜色的辅助色  class=&quot;zui-color-default-assist&quot;&lt;/p&gt;<br>
+                                    &lt;h3 class=&quot;title&quot;&gt;字体对齐使用&lt;/h3&gt;<br>
+                                    &lt;p class=&quot;zui-text-left&quot;&gt;字体的左对齐  class=&quot;zui-text-left&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-text-center&quot;&gt;字体居中对齐  class=&quot;zui-text-center&quot;&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-text-right&quot;&gt;字体的右对齐  class=&quot;zui-text-right&quot;&lt;/p&gt;<br>
                                 </code>
                             </pre>
                         </figure>
@@ -96,20 +112,27 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>辅助元素使用说明</h4>
-                            <p>1</p>
+                            <p>使用了浮动的元素必须在其<strong class="zui-color-main">直接父级元素</strong>使用class类<strong class="zui-color-main">clearfix</strong>对元素进行清除浮动。</p>
+                            <p>关于横线的使用可以直接使用hr标签去实现。但是hr标签不支持虚线，只支持实线。</p>
                         </div>
                         <div class="bs-example">
                             <div class="clearfix">
                                 <p class="zui-pull-left zui-font36">左浮动</p>
                                 <p class="zui-pull-right zui-font36">有浮动</p>
                             </div>
+                            <hr>
                             <p class="zui-border-bottom zui-padding-bottom10">这是一条底部实线</p>
                             <p class="zui-dashed zui-padding-bottom10" >这是一条底部虚线</p>
                         </div>
                         <figure class="highlight">
                             <pre>
                                 <code class="language-html" >
-
+                                    &lt;div class=&quot;clearfix&quot;&gt;<br>
+                                        <span class="n"></span>&lt;p class=&quot;zui-pull-left zui-font36&quot;&gt;左浮动&lt;/p&gt;<br>
+                                        <span class="n"></span>&lt;p class=&quot;zui-pull-right zui-font36&quot;&gt;有浮动&lt;/p&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;p class=&quot;zui-border-bottom zui-padding-bottom10&quot;&gt;这是一条底部实线&lt;/p&gt;<br>
+                                    &lt;p class=&quot;zui-dashed zui-padding-bottom10&quot; &gt;这是一条底部虚线&lt;/p&gt;<br>
                                 </code>
                             </pre>
                         </figure>
@@ -121,7 +144,7 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>栅格系统用法说明</h4>
-                            <p>使用单一的一组 .zui-col-* 栅格类，就可以创建一个基本的栅格系统，在手机和平板设备上一开始是堆叠在一起的（超小屏幕到小屏幕这一范围），在桌面（中等）屏幕设备上变为水平排列。所有“列（column）必须放在 ” .zui-fluid 和 .zui-row 内。</p>
+                            <p>使用单一的一组 .zui-col-* 栅格类，就可以创建一个基本的栅格系统，所有“列（column）必须放在 ” .zui-fluid 和 .zui-row 内。</p>
                         </div>
                         <div class="bs-example">
                             <div class="zui-fluid">
@@ -296,10 +319,11 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>表单用法说明</h4>
-                            <p>。</p>
+                            <p>表单的元素必须包含在class为 <strong class="zui-color-main"> zui-forms </strong>的标签内，每一行的表单必须包含在class为<strong class="zui-color-main"> zui-form-item </strong>的标签内，<strong class="zui-color-main"> zui-form-label </strong> 最多输入六个文字，<strong class="zui-color-main">  zui-input-block </strong> 表示块状（宽度100%）显示。<strong class="zui-color-main">  zui-input-inline </strong>表示内联的块状（宽度190px），<strong class="zui-color-main">  zui-form-mid </strong>表示开启表单的提示信息，<strong class="zui-color-main">  zui-word-aux  </strong>表示默认的表单提示（灰色），<strong class="zui-color-main">  zui-word-danger  </strong>表示默认的表单提示（红色警告）</p>
+                            <p class="zui-color-main">关于单选和复选框的样式修改问题。可以通过修改form.less文件中的<strong>[type="checkbox"] + span{}</strong>中的 <strong> background </strong>的值来自定义样式，也可以直接用图片来做背景进行单选和复选的样式进行自定义。</p>
                         </div>
                         <div class="bs-example">
-                            <div class="zui-form">
+                            <div class="zui-forms">
                                 <div class="zui-form-item">
                                     <label class="zui-form-label">单行输入框</label>
                                     <div class="zui-input-block">
@@ -391,7 +415,7 @@
                         <figure class="highlight">
                             <pre>
                                 <code class="language-html" >
-                                    <br>&lt;div class=&quot;zui-form&quot;&gt;
+                                    <br>&lt;div class=&quot;zui-forms&quot;&gt;
                                     <br><span class="n"></span>&lt;div class=&quot;zui-form-item&quot;&gt;
                                     <br><span class="n"></span><span class="n"></span>&lt;label class=&quot;zui-form-label&quot;&gt;单行输入框&lt;/label&gt;
                                     <br><span class="n"></span><span class="n"></span>&lt;div class=&quot;zui-input-block&quot;&gt;
@@ -490,7 +514,10 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>表格用法说明</h4>
-                            <p>。</p>
+                            <p>1、通过给table标签添加<strong>  class="zui-table"  </strong>的样式，既可以调用表格的默认样式了。</p>
+                            <p>2、通过设置<strong> zui-skin="line" 进行table表格的皮肤匹配，皮肤一共内置3种，值分别是：line、row、noborder</strong></p>
+                            <p>3、通过zui-even=""进行表格之间的颜色区域间隔。</p>
+                            <p class="zui-color-main">注意：表格的格式必须严格按照实例代码中的进行书写</p>
                         </div>
                         <div class="bs-example">
                             <h3 class="title">默认表格</h3>
@@ -810,7 +837,9 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>标签使用说明</h4>
-                            <p>1</p>
+                            <p>1、通过对任何标签设置 <strong> class="zui-lable" </strong>就可以启用标签样式</p>
+                            <p>2、通过追加不同的值，设置不同的颜色。值： zui-label-main、 zui-label-success、 zui-label-warning、 zui-label-danger、 zui-label-disabled</p>
+                            <p class="zui-color-main">注意：标签的启用必须有class的类zui-label在才会生效。</p>
                         </div>
                         <div class="bs-example">
                             <span class="zui-label">默认标签</span>
@@ -840,7 +869,8 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>标题使用说明</h4>
-                            <p>1</p>
+                            <p>1、默认的h1、h2、h3、h4、h5、h6标签被重置成字体大小分别为36px、30px、24px、18px、14px、12px</p>
+                            <p>2、h*系列的标签只用于标题类型的位置。</p>
                         </div>
                         <div class="bs-example">
                             <h1>标题一</h1>
@@ -921,7 +951,32 @@
                         <figure class="highlight">
                             <pre>
                                 <code class="language-html" >
+                                    &lt;div class=&quot;zui-alert zui-alert-success&quot; &gt;<br>
+                                    <span class="n"></span>&lt;strong&gt;成功提示！&lt;/strong&gt;你成功地阅读这个警告消息<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;div class=&quot;zui-alert zui-alert-info&quot; &gt;<br>
+                                        <span class="n"></span>&lt;strong&gt;继续提示！&lt;/strong&gt;你成功地阅读这个警告消息<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;div class=&quot;zui-alert zui-alert-warning&quot; &gt;<br>
+                                        <span class="n"></span>&lt;strong&gt;警告提示！&lt;/strong&gt;
+                                        你成功地阅读这个警告消息<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;div class=&quot;zui-alert zui-alert-danger&quot; &gt;<br>
+                                        <span class="n"></span>&lt;strong&gt;危险提示！&lt;/strong&gt;你成功地阅读这个警告消息<br>
+                                    &lt;/div&gt;
+                                </code>
+                            </pre>
+                        </figure>
 
+                        <figure class="highlight">
+                            <pre>
+                                <code class="language-html" >
+                                    &lt;div class=&quot;zui-alert zui-alert-warning zui-alert-dismissible&quot; role=&quot;alert&quot;&gt;<br>
+                                        <span class="n"></span>&lt;button type=&quot;button&quot; class=&quot;close&quot;&gt;<br>
+                                        <span class="n"></span><span class="n"></span>&lt;span&gt;&amp;times;&lt;/span&gt;<br>
+                                        <span class="n"></span>&lt;/button&gt;<br>
+                                        <span class="n"></span>&lt;strong&gt;危险提示！&lt;/strong&gt;这是一个可以关闭的微信警告窗体<br>
+                                    &lt;/div&gt;
                                 </code>
                             </pre>
                         </figure>
@@ -933,7 +988,10 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>进度条用说明</h4>
-                            <p>1</p>
+                            <p>1、通过给class类zui-progress-bar下的标签span <strong class="zui-color-main">(备注：必须是span标签，否则无法进行显示读条的百分比)</strong>写入<strong class="zui-color-main"> style="width:*" </strong>进行控制进度条的百分百。</p>
+                            <p>2、使用小规格的进度条时，没办法显示数值提示。</p>
+                            <p>3、通过追加class=“zui-stripes”在zui-progress-bar标签上面，可以使标签带上动画效果</p>
+                            <p class="zui-color-main">备注：zui-stripes的动画效果是有css3的函数写的，所以兼容性要求ie8+</p>
                         </div>
                         <div class="bs-example">
                             <h4 class=" zui-margin-horizontal10">默认进度条</h4>
@@ -968,7 +1026,32 @@
                         <figure class="highlight">
                             <pre>
                                 <code class="language-html" >
-
+                                    &lt;h4 class=&quot; zui-margin-horizontal10&quot;&gt;默认进度条&lt;/h4&gt;<br>
+                                    &lt;div class=&quot;zui-progress-bar&quot;&gt;<br>
+                                        <span class="n"></span>&lt;span style=&quot;width: 40%&quot;&gt;&lt;/span&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;h4 class=&quot; zui-margin-horizontal10&quot;&gt;带条纹进度条&lt;/h4&gt;<br>
+                                    &lt;div class=&quot;zui-progress-bar zui-stripes&quot;&gt;<br>
+                                        <span class="n"></span>&lt;span style=&quot;width: 60%&quot;&gt;60%&lt;/span&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;h4 class=&quot; zui-margin-horizontal10&quot;&gt;不同颜色进度条&lt;/h4&gt;<br>
+                                    &lt;div class=&quot;zui-progress-bar zui-stripes zui-progress-success&quot;&gt;<br>
+                                        <span class="n"></span>&lt;span style=&quot;width: 20%&quot;&gt;20%&lt;/span&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;div class=&quot;zui-progress-bar zui-stripes zui-progress-warning&quot;&gt;<br>
+                                        <span class="n"></span>&lt;span style=&quot;width: 70%&quot;&gt;70%&lt;/span&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;div class=&quot;zui-progress-bar zui-stripes zui-progress-danger&quot;&gt;<br>
+                                        <span class="n"></span>&lt;span style=&quot;width: 60%&quot;&gt;60%&lt;/span&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;h4 class=&quot;&quot;&gt;大规格进度条&lt;/h4&gt;<br>
+                                    &lt;div class=&quot;zui-progress-bar zui-progress-success zui-progress-big&quot;&gt;<br>
+                                        <span class="n"></span>&lt;span style=&quot;width: 90%&quot;&gt;90%&lt;/span&gt;<br>
+                                    &lt;/div&gt;<br>
+                                    &lt;h4 class=&quot;&quot;&gt;小规格进度条&lt;/h4&gt;<br>
+                                    &lt;div class=&quot;zui-progress-bar zui-progress-success zui-progress-small&quot;&gt;<br>
+                                        <span class="n"></span>&lt;span style=&quot;width: 80%&quot;&gt;80%&lt;/span&gt;<br>
+                                    &lt;/div&gt;
                                 </code>
                             </pre>
                         </figure>

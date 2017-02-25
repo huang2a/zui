@@ -87,6 +87,9 @@
     margin-top: 0;
     margin-bottom: 5px;
 }
+.bs-callout p{
+    line-height: 150%;
+}
 .zui-row{
     margin-bottom: 10px;
 }

@@ -36,6 +36,12 @@
                 <a href="">网站案例</a>
             </li>
             <ul class="zui-nav-right">
+                <li class="zui-nav-item zui-nav-nowidth">
+                    <a href=""><i class="zui-iconfont">&#xe667;</i></a>
+                </li>
+                <li class="zui-nav-item">
+                    <a href=""><i class="zui-iconfont">&#xe6af;</i>购物车</a>
+                </li>
                 <li class="zui-nav-item">
                     <a href="">右边菜单</a>
                 </li>
@@ -54,7 +60,8 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>翻页组件使用说明</h4>
-                            <p>1</p>
+                            <p>1、翻页控件可直接整个移植到所需的页面。</p>
+                            <p>2、如需翻页页面进行水平居中，则需将组件放入<strong class="zui-color-main"> &lt;div class=&quot;zui-text-center&quot;&gt; 翻页控件代码 &lt;/div&gt; </strong>的标签中。</p>
                         </div>
                         <div class="bs-example" id="">
                             <div>
@@ -98,7 +105,10 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>水平导航组件用法说明</h4>
-                            <p>1</p>
+                            <p>1、按照示例代码的结构即可启用一个默认的导航条（<strong>默认为不固定</strong>）</p>
+                            <p>2、通过最近class类zui-nav-right可以启用一个在右边的导航菜单。还可以在class类zui-nav-item后面追加类zui-nav-nowidth进行清楚导航的最小宽度。（多数用于显示图标导航）<span class="zui-color-main">参考顶部导航</span></p>
+                            <p>3、顶部导航栏目固定可通过配置 class 类 zui-nav-fixed 实现，当需要手动去设置 body 的 padding-top:50px;</p>
+                            <p>4、通过zui-nav-child的类可以实现下拉菜单样式</p>
                         </div>
                         <div class="bs-example" id="nav">
                             <div id="zui-nav" class="zui-nav">
@@ -127,6 +137,12 @@
                                         <a href="">运营报告</a>
                                     </li>
                                     <ul class="zui-nav-right">
+                                        <li class="zui-nav-item zui-nav-nowidth">
+                                            <a href=""><i class="zui-iconfont">&#xe667;</i></a>
+                                        </li>
+                                        <li class="zui-nav-item">
+                                            <a href=""><i class="zui-iconfont">&#xe6af;</i>购物车</a>
+                                        </li>
                                         <li class="zui-nav-item">
                                             <a href="">右边菜单</a>
                                         </li>
@@ -137,17 +153,56 @@
                         <figure class="highlight">
                             <pre>
                                 <code class="language-html" >
-
+                                    &lt;div id=&quot;zui-nav&quot; class=&quot;zui-nav&quot;&gt;<br>
+                                        <span class="n"></span>&lt;ul class=&quot;zui-nav-box&quot;&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-nav-item&quot;&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;a class=&quot;active&quot; href=&quot;##&quot;&gt;首页&lt;/a&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-nav-item&quot;&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;javascript:;&quot;&gt;我要投资&lt;span class=&quot;zui-mark&quot;&gt;(23)&lt;/span&gt;&lt;/a&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;dl class=&quot;zui-nav-child&quot;&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;dd&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;##&quot;&gt;二级分类&lt;/a&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/dd&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;dd&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;##&quot;&gt;二级分类&lt;/a&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/dd&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;dd&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;##&quot;&gt;二级分类&lt;/a&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/dd&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/dl&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-nav-item&quot;&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;##&quot;&gt;会员交易&lt;/a&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-nav-item&quot;&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;&quot;&gt;运营报告&lt;/a&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;ul class=&quot;zui-nav-right&quot;&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-nav-item zui-nav-nowidth&quot;&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;zui-iconfont&quot;&gt;&amp;#xe667;&lt;/i&gt;&lt;/a&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-nav-item&quot;&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;&quot;&gt;&lt;i class=&quot;zui-iconfont&quot;&gt;&amp;#xe6af;&lt;/i&gt;购物车&lt;/a&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-nav-item&quot;&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;&quot;&gt;右边菜单&lt;/a&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/ul&gt;<br>
+                                        <span class="n"></span>&lt;/ul&gt;<br>
+                                    &lt;/div&gt;<br>
                                 </code>
                             </pre>
                         </figure>
                         <div class="bs-callout">
                             <h4>垂直导航组件用法说明</h4>
-                            <p>1</p>
+                            <p>1、垂直导航默认的宽度是250px，如需修改宽度，请在 nav.less 文件下进行修改。</p>
+                            <p>2、在zui-tree-item 类下面添加zui-nav-two的二级导航菜单即可实现菜单的收缩功能，三级菜单也遵循这种结构方式。</p>
+                            <p>3、zui-inactive-off（收起时候图标） zui-inactive-on（展开时候图标）可以控制右边图标的显示。 还可以通过 zui-nav-show 的类来实现默认展开</p>
                         </div>
                         <div class="bs-example" id="">
-                            <div class="list zui-tree">
-                                <ul class="yiji zui-tree-box">
+                            <div class="zui-tree">
+                                <ul class="zui-tree-box">
                                     <li class="zui-tree-item">
                                         <a href="##">没有下拉</a>
                                     </li>
@@ -197,7 +252,49 @@
                         <figure class="highlight">
                             <pre>
                                 <code class="language-html" >
-
+                                     &lt;div class=&quot;zui-tree&quot;&gt;<br>
+                                        <span class="n"></span>&lt;ul class=&quot;zui-tree-box&quot;&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-tree-item&quot;&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;a href=&quot;##&quot;&gt;没有下拉&lt;/a&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-tree-item &quot;&gt;&lt;a href=&quot;##&quot; class=&quot;zui-inactive-off zui-inactive-on&quot;&gt;默认展开&lt;/a&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;ul class=&quot;zui-nav-two zui-nav-show&quot;&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;不能展开&lt;/a&gt;&lt;/li&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;这个也不行&lt;/a&gt;&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/ul&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-tree-item&quot;&gt;&lt;a href=&quot;##&quot; class=&quot;zui-inactive-off&quot;&gt;二级菜单&lt;/a&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;ul class=&quot;zui-nav-two&quot;&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;不能展开&lt;/a&gt;&lt;/li&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;这个也不行&lt;/a&gt;&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/ul&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;li class=&quot;zui-tree-item&quot;&gt;&lt;a href=&quot;##&quot; class=&quot;zui-inactive-off&quot;&gt;三级菜单&lt;/a&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;ul class=&quot;zui-nav-two&quot;&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot; class=&quot;zui-inactive-off&quot;&gt;点一下试试&lt;/a&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;ul class=&quot;zui-nav-three&quot;&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;办公室&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;人事处&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;组联部&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;外联部&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;研究部&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;维权办&lt;/a&gt;&lt;/li&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/ul&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li class=&quot;&quot;&gt;&lt;a class=&quot;zui-inactive-off&quot; href=&quot;##&quot;&gt;这里也还有&lt;/a&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;ul class=&quot;zui-nav-three&quot;&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;办公室&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;人事处&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;组联部&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;外联部&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;研究部&lt;/a&gt;&lt;/li&gt;<br>
+                                                            <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;li&gt;&lt;a href=&quot;##&quot;&gt;维权办&lt;/a&gt;&lt;/li&gt;<br>
+                                                        <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/ul&gt;<br>
+                                                    <span class="n"></span><span class="n"></span><span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                                <span class="n"></span><span class="n"></span><span class="n"></span>&lt;/ul&gt;<br>
+                                            <span class="n"></span><span class="n"></span>&lt;/li&gt;<br>
+                                        <span class="n"></span>&lt;/ul&gt;<br>
+                                    &lt;/div&gt;<br>
                                 </code>
                             </pre>
                         </figure>
@@ -209,7 +306,8 @@
                         <hr>
                         <div class="bs-callout">
                             <h4>默认TAB选卡切换用法说明</h4>
-                            <p>1</p>
+                            <p>1、tab默认是点击切换的。tab的宽度是自动的。</p>
+                            <p>2、tab的样式内置了3种，zui-skin="default"（默认风格）、zui-skin="brief"（极简风格）、zui-skin="card"（卡片风格）。如需增加风格，可在tab.less 文件进行增加，按照其他风格皮肤的格式进行设计。</p>
                         </div>
                         <div class="bs-example" id="">
                             <div class="zui-tab"  zui-skin="default">
@@ -859,7 +957,7 @@
                             <p>通过js的方法进行外部调用</p>
                         </div>
                         <div class="bs-example">
-                            <div class="zui-form">
+                            <div class="zui-forms">
                                 <div class="zui-form-item">
                                     <label class="zui-form-label">自定义时间</label>
                                     <div class="zui-input-inline">

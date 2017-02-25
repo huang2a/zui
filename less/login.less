@@ -1,0 +1,136 @@
+.zui-logo-input{
+    width:392px;
+    height: auto;
+    padding:30px;
+    background: #fff;
+    .border-radius(5px);
+    .zui-title{
+        margin: 0 0 20px 0;
+        .zui-text-center();
+     }
+     .zui-form-item{
+        margin-bottom: 20px;
+     }
+     .zui-input-block,.zui-input-inline{
+        margin-left: 0;
+     }
+     .zui-input-inline{
+        width: 222px;
+     }
+     .zui-form-mid{
+        padding: 0;
+        margin: 0;
+        img{
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+        }
+     }
+}
+
+.zui-flow-box{
+    padding: 30px 0 20px 0;
+    .zui-flow{
+        float: left;
+        width: 33.333%;
+        position: relative;
+        .link{
+            display: inline-block;
+            width: 100%;
+            height: 6px;
+            background: #d1d1d1;
+            text-indent: -9999px;
+            position: absolute;
+            top: 22px;
+            left: 0;
+            z-index: 99;
+        }
+        .number{
+            position: relative;
+            font-size: 24px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 40px;
+            border: 6px solid #d1d1d1;
+            color: #666;
+            text-align: center;
+            margin: 0;
+            background: @default-body-color;
+            z-index: 999;
+            .border-radius(50%);
+        }
+    }
+    .zui-flow-one{
+        .link{
+            width: 50%;
+            left: 50%;
+        }
+    }
+    .zui-flow-three{
+        .link{
+            width: 50%;
+        }
+    }
+    .zui-active.zui-flow-one{
+        color: @default-main-color;
+        .link{
+            width: 50%;
+            left: 50%;
+            background: @default-main-color;
+        }
+        .number{
+            border-color: @default-main-color;
+            color: @default-main-color;
+        }
+    }
+    .zui-active.zui-flow-two{
+        color: @default-main-color;
+        .link{
+            background: @default-main-color;
+        }
+        .number{
+            border-color: @default-main-color;
+            color: @default-main-color;
+        }
+    }
+    .zui-active.zui-flow-three{
+        color: @default-main-color;
+        .link{
+            background: @default-main-color;
+        }
+        .number{
+            border-color: @default-main-color;
+            color: @default-main-color;
+        }
+    }
+}
+.zui-flow-small{
+    .zui-flow{
+        width: 50% !important;
+    }
+    .zui-flow-two{
+        .link{
+            width: 50% !important;
+        }
+    }
+}
+.zui-flow-input{
+    width: 362px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+    .zui-form-item{
+        margin-bottom: 20px;
+        .zui-input-block{
+            margin-left: 0;
+        }
+        .zui-input-inline{
+            width: 252px;
+        }
+        .zui-form-mid{
+            margin-right: 0;
+            height: 40px;
+            overflow: hidden;
+        }
+    }
+}
