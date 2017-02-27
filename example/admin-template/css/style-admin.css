@@ -71,6 +71,20 @@ html,body,.zui-admin-main{
 .zui-admin-menu .zui-tree .zui-nav-two>li>a:hover,.zui-admin-menu .zui-tree .zui-nav-two>li>a.zui-active{
     background-color: #1d2226;
 }
+.zui-tree-box .zui-nav-three{
+    border:none;
+}
+.zui-tree-box .zui-nav-three>li {
+    background: #3D4245;
+}
+.zui-tree-box .zui-nav-three>li a{
+    color: #fff;
+    border: none;
+}
+.zui-tree-box li a i {
+    font-size: 14px;
+    padding: 0 4px 0 0;
+}
 .zui-admin-titlt{
     padding:0 20px;
 }
@@ -82,4 +96,65 @@ html,body,.zui-admin-main{
     margin-bottom: 16px;
     border-radius: 3px;
     background-clip: padding-box;
+}
+.zui-admin-header{
+    min-height: 50px;
+    padding: 10px 20px;
+}
+.zui-admin-header .filter-block {
+    margin-top: 7px;
+}
+.zui-admin-header  .zui-forms{
+    margin-right: 10px;
+    position: relative;
+}
+.zui-admin-fooder{
+    padding: 20px 0 0 0;
+}
+.zui-admin-fooder .zui-page{
+    margin:0;
+}
+.iconfont-box{
+    margin: 10px !important;
+}
+.iconfont-box i {
+    font-size: 2.4em;
+    display: block;
+    float: left;
+    margin-right: 15px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    background-clip: padding-box;
+    color: #fff;
+}
+.iconfont-box .headline{
+    display: block;
+    font-size: 18px;
+    font-weight: 300;
+    text-align: right;
+    padding: 4px 0;
+    margin: 0;
+}
+.iconfont-box .value{
+    font-size: 24px;
+    font-weight: 600;
+    display: block;
+    text-align: right;
+    white-space:normal;
+    margin: 0;
+}
+.zui-red-bg {
+    background-color: #e74c3c!important;
+}
+.zui-emerald-bg {
+    background-color: #3498db!important;
+}
+.zui-green-bg {
+    background-color: #2ecc71!important;
+}
+.zui-yellow-bg {
+    background-color: #f1c40f!important;
 }
